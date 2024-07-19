@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url(../fonts/vazir/Vazirmatn-RD-Regular.woff2 ) format("woff2");
+}
+
+body{
+  font-family: "font-3";
+  transition: all 0.5s;
+  font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.nav-link,
+.navbar-brand {
+  color: ghostwhite !important;
+}
+.navbar{
+  transition: all 0.5s;
+}
+.nav-background{
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  transition: all 0.5s;
+}
+
+.nav-link {
+  font-size: 17px;
+  text-shadow: 5px 4px 8px rgba(150, 150, 150, 0.7);
+}
+
+.nav-link:hover{
+  color: #198754 !important;
+}
+
+.active {
+  text-decoration: underline 2px #198754;
+  text-underline-offset: 3px;
+  transition: all 0.5s;
+
+}
+
+.landing {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 120px 0 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.landing-main-text{
+  font-size: 33px !important;
+  text-shadow: 5px 4px 8px rgb(20, 20, 20) !important;
+
+}
+.landing-caption-text{
+  font-size: 21px !important;
+  text-shadow: 5px 4px 8px rgb(20, 20, 20) !important;
+}
+.landing::before {
+  content: "";
+  background: color-mix(in srgb, rgb(0, 0, 0), transparent 34%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+}
+
+.offcanvas {
+  width: 100% !important;
+  background-color: rgb(255, 255, 255);
+}
+
+.landing h2 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  font-family: var(--nav-font);
+}
+
+.landing h2 span {
+  color: var(--accent-color);
+}
+
+.landing p {
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.landing .container-fluid {
+  position: relative;
+  z-index: 3;
+}
+
+.landing-iconsection-main{
+  padding: 35px 23px;
+  transition: all 0.3s;
+  box-shadow: 4px 6px 15px -5px rgba(138, 138, 138, 0.75) !important;
+  -webkit-box-shadow: 7px 10px 18px -4px rgba(138, 138, 138, 0.75);
+  -moz-box-shadow: 7px 10px 18px -4px rgba(138, 138, 138, 0.75);
+}
+
+.landing-icon-text{
+  text-shadow: 5px 4px 8px rgb(20, 20, 20) !important;
+}
+
+.landing-iconsection-main:hover {
+  transition: all 0.3s;
+  border-color: #198754 !important;
+}
+
+.resume-text {
+	font-size: 17px
+}
+
+.horizontal-line {
+	width: 15%;
+  opacity:0.4;
+  margin: auto 0;
+	color: #198754
+}
+
+.services-card{
+  transition: all 0.3s;
+}
+.services-card:hover{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.back-to-top{
+  border-top-left-radius: 100% !important;
+  z-index: 9;
+  visibility: hidden;
+}
+
+.card{
+  background-color:rgb(245, 245, 245);
+  border: none;
+  box-shadow: 10px 10px 25px rgba(240, 240, 240, 0.678);
+}
