@@ -14,7 +14,7 @@
     }
 
     .landing-main-text{
-        font-size: 21px !important;
+        font-size: 23px !important;
       
       }
       .landing-caption-text{
@@ -28,6 +28,10 @@
       }
       .container-fluid{
         width: 100% !important;
+        margin: 0 auto;
+      }
+      .contact-card{
+        width: 100%;
       }
 
 }

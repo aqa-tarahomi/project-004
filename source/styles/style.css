@@ -15,13 +15,11 @@ body{
   font-size: 16px;
 font-weight: 400;
 line-height: 26px;
+background-color: #f1f1f1
 }
 .nav-link,
 .navbar-brand {
   color: ghostwhite !important;
-}
-.navbar{
-  transition: all 0.5s;
 }
 .nav-background{
   background-color: rgba(0, 0, 0, 0.8) !important;
@@ -30,7 +28,6 @@ line-height: 26px;
 
 .nav-link {
   font-size: 17px;
-  text-shadow: 5px 4px 8px rgba(150, 150, 150, 0.7);
 }
 
 .nav-link:hover{
@@ -41,14 +38,12 @@ line-height: 26px;
   text-decoration: underline 2px #198754;
   text-underline-offset: 3px;
   transition: all 0.5s;
-
 }
 
 .landing {
-  width: 100%;
   min-height: 100vh;
   position: relative;
-  padding: 120px 0 80px 0;
+  padding: 120px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,15 +52,13 @@ line-height: 26px;
 .landing img {
   position: absolute;
   inset: 0;
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
 }
 
 .landing-main-text{
-  font-size: 33px !important;
+  font-size: 31px !important;
   text-shadow: 5px 4px 8px rgb(20, 20, 20) !important;
 
 }
@@ -75,11 +68,10 @@ line-height: 26px;
 }
 .landing::before {
   content: "";
-  background: color-mix(in srgb, rgb(0, 0, 0), transparent 34%);
+  background: rgba(0, 0, 0, 0.75);
   position: absolute;
   inset: 0;
   z-index: 2;
-
 }
 
 .offcanvas {
@@ -112,7 +104,7 @@ line-height: 26px;
 .landing-iconsection-main{
   padding: 35px 23px;
   transition: all 0.3s;
-  box-shadow: 4px 6px 15px -5px rgba(138, 138, 138, 0.75) !important;
+  box-shadow: 6px 8px 15px -5px rgba(138, 138, 138, 0.575) !important;
   -webkit-box-shadow: 7px 10px 18px -4px rgba(138, 138, 138, 0.75);
   -moz-box-shadow: 7px 10px 18px -4px rgba(138, 138, 138, 0.75);
 }
@@ -141,18 +133,49 @@ line-height: 26px;
   transition: all 0.3s;
 }
 .services-card:hover{
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
 }
 
 .back-to-top{
   border-top-left-radius: 100% !important;
-  z-index: 9;
   visibility: hidden;
+  width: 43px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  font-size: 18px;
+  transition: all 1s;
 }
 
 .card{
-  background-color:rgb(245, 245, 245);
+  background-color:rgba(43, 43, 43, 0.05);
   border: none;
-  box-shadow: 10px 10px 25px rgba(240, 240, 240, 0.678);
 }
+
+.team-card-icon{
+  height: 40px;
+  line-height: 100%;
+  text-align: center;
+  transition: all 0.3s;
+
+}
+
+.team-card-icon:hover{
+  color: #198754;
+  border: 1px solid rgba(0, 0, 0, 0.788);
+  transition: all 0.3s;
+}
+  .address-icon{
+    color: rgb(44, 44, 44);
+    margin-left: 10px;
+    font-size: 24px;
+    transition: all .3s;  
+  }
+  .address-icon:hover{
+    color: #198754;
+  }
+  .contact-card{
+    width: 49%;
+    background-color:rgba(43, 43, 43, 0.05);
+  }
