@@ -1,3 +1,5 @@
+AOS.init();
+
 function navscroll()
 {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -7,11 +9,11 @@ function navscroll()
         document.querySelector("nav").classList.remove("nav-background");
     }
 
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("back_to_top").style.visibility="visible";
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        document.getElementById("back_to_top").style.opacity="1";
     }
     else{
-        document.getElementById("back_to_top").style.visibility="hidden";
+        document.getElementById("back_to_top").style.opacity="0";
     }
 }
 

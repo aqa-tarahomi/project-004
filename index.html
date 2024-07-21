@@ -5,9 +5,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" href="source/gallery/logo-1.webp">
       <title>Document</title>
-      <link rel="stylesheet" href="source/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="source/styles/style.css">
       <link rel="stylesheet" href="source/styles/response.css">
    </head>
@@ -17,36 +17,36 @@
          <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
             <div class="container-fluid">
                <button class="navbar-toggler" type="button" style=" color: green;" data-bs-toggle="offcanvas"
-                  data-bs-target="#navv" aria-controls="navv" data-bs-theme="dark">
+                  data-bs-target="#navv" aria-controls="navv" data-bs-theme="dark" aria-label="nav bar">
                <span class="navbar-toggler-icon"></span>
                </button>
-               <a href="index.html" class="navbar-brand ms-5">
+               <a href="index.html" aria-label="reload page" class="navbar-brand ms-5">
                <img src="source/gallery/logo-2.webp" alt="" style="height: 3.5rem; width: 3.5rem;">
                </a>
                <div class="offcanvas offcanvas-end text-dark" id="navv" data-bs-backdrop="true" data-bs-scroll="true"
                   tabindex="-1" style="width: 270px;">
                   <div class="d-lg-none mt-3">
                      <button type="button" class="btn-close ms-auto me-3 mb-3" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                        aria-label="Close nav"></button>
                   </div>
                   <ul class="navbar-nav">
                      <li class="nav-item me-2">
-                        <a href="#landing" class="nav-link active">صفحه نخست</a>
+                        <a href="#landing" class="nav-link active" aria-label="landing page">صفحه نخست</a>
                      </li>
                      <li class="nav-item me-2">
-                        <a href="#about" class="nav-link">درباره ما</a>
+                        <a href="#about" class="nav-link" aria-label="about us page">درباره ما</a>
                      </li>
                      <li class="nav-item me-2">
-                        <a href="#services" class="nav-link">خدمات</a>
+                        <a href="#services" class="nav-link" aria-label="services page">خدمات</a>
                      </li>
                      <li class="nav-item me-2">
-                        <a href="#" class="nav-link ">نمونه کار ها</a>
+                        <a href="#" class="nav-link " aria-label="protofilo page">نمونه کار ها</a>
                      </li>
                      <li class="nav-item me-2">
-                        <a href="#team" class="nav-link">تیم ما</a>
+                        <a href="#team" class="nav-link" aria-label="about our team page">تیم ما</a>
                      </li>
                      <li class="nav-item me-2">
-                        <a href="#contact" class="nav-link">تماس با ما</a>
+                        <a href="#contact" class="nav-link" aria-label="contact us page">تماس با ما</a>
                      </li>
                   </ul>
                </div>
@@ -58,47 +58,42 @@
          <article class="landing" id="landing">
             <img src="source/gallery/hero-bg.webp" alt="">
             <div class="container-fluid ">
-               <div class="row d-flex justify-content-center text-center text-light mt-5 mb-5" data-aos="fade-up" data-aos-delay="100">
-                  <h1 class="landing-main-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+               <div class="row d-flex justify-content-center text-center text-light mt-5 mb-5">
+                  <p class="landing-main-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
                      طراحان گرافیک است
-                  </h1>
+                  </p>
                   <p class="landing-caption-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
                </div>
                <div class="row d-flex justify-content-center text-light text-center gap-5 mt-5">
                   <div class="landing-iconsection-main col-11 col-md-5 col-lg-auto border rounded-2 ">
-                     <h3 class="landing-icon"><i class="bi bi-windows text-success"></i></h3>
+                     <p class="landing-icon"><i class="bi bi-windows text-success"></i></p>
                      <h4 class="landing-icon-text">لورم ایپسوم متن ساختگی</h4>
                   </div>
                   <div class="landing-iconsection-main col-11 col-md-5 col-lg-auto border rounded-2 ">
-                     <h3 class="landing-icon"><i class="bi bi-windows text-success"></i></h3>
+                     <p class="landing-icon"><i class="bi bi-windows text-success"></i></p>
                      <h4 class="landing-icon-text">لورم ایپسوم متن ساختگی</h4>
                   </div>
                   <div class="landing-iconsection-main col-11 col-md-5 col-lg-auto border rounded-2 ">
-                     <h3 class="landing-icon"><i class="bi bi-windows text-success"></i></h3>
+                     <p class="landing-icon"><i class="bi bi-windows text-success"></i></p>
                      <h4 class="landing-icon-text">لورم ایپسوم متن ساختگی</h4>
                   </div>
                   <div class="landing-iconsection-main col-11 col-md-5 col-lg-auto border rounded-2 ">
-                     <h3 class="landing-icon"><i class="bi bi-windows text-success"></i></h3>
+                     <p class="landing-icon"><i class="bi bi-windows text-success"></i></p>
                      <h4 class="landing-icon-text">لورم ایپسوم متن ساختگی</h4>
                   </div>
                </div>
             </div>
          </article>
-
          <div class="container-fluid" style="width:95% ;">
-
-
             <article id="about">
-
-               <header style="padding-top: 75px;" > 
+               <header style="padding-top: 75px;" >
                   <div class=" d-flex mt-2">
                      <h2 class="mb-0 mt-1"> درباره ما بیشتر بدانید </h2>
                      <hr class="me-3 horizontal-line">
                   </div>
                   <h6>درباره ما بیشتر بدانید</h6>
                </header>
-
-               <section class="mt-5" >
+               <section class="mt-5 p-3" style="background-color:rgba(43, 43, 43, 0.05);">
                   <div class="row d-flex justify-content-between flex-wrap g-2">
                      <div class="col-12 col-md-6">
                         <div class="card-body">
@@ -106,7 +101,6 @@
                               <h4 class="card-title text-success mb-4">لورم ایپسوم متن ساختگی با تولید سادگی
                                  نامفهوم از صنعت چاپ
                               </h4>
-
                               <h6 class="card-text mb-4">
                                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
                                  چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
@@ -137,17 +131,16 @@
                         </div>
                      </div>
                      <div class="col-12 col-md-5">
-                        <div class="card-img" data-aos="zoom-in">
+                        <div class="card-img" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
                            <img src="source/gallery/about.webp" class="img-fluid " alt="...">
                         </div>
                      </div>
                   </div>
                </section>
-   
-               <section style="margin-top: 100px ;">
+               <section class="p-3" style="background-color:rgba(43, 43, 43, 0.05 ); margin-top: 130px;" >
                   <div class="row d-flex justify-content-between flex-wrap g-2">
                      <div class="col-12 col-md-5">
-                        <div class="card-img" data-aos="zoom-in">
+                        <div class="card-img" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
                            <img src="source/gallery/about.webp" class="img-fluid " alt="...">
                         </div>
                      </div>
@@ -157,28 +150,28 @@
                               <div class="col-12">
                                  <div class="col-12 ">
                                     <div class="card-icon d-flex  mb-3">
-                                       <i class="bi bi-camera-reels h1 col-auto ms-4 me-2 my-auto text-success border p-4 border-success text-center"></i>
+                                       <i class="bi bi-camera-reels h1 col-auto ms-4 me-2 my-auto text-success border p-4 border-success text-center" style="background-color: rgba(43, 43, 43, 0.3);"></i>
                                        <div class="d-flex flex-wrap">
                                           <h4>لورم ایپسوم متن </h4>
                                           <p><small>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </small></p>
                                        </div>
                                     </div>
                                     <div class="card-icon d-flex  mb-3">
-                                       <i class="bi bi-router h1 col-auto ms-4 me-2 my-auto text-success border p-4 border-success text-center"></i>
+                                       <i class="bi bi-router h1 col-auto ms-4 me-2 my-auto text-success border p-4 border-success text-center" style="background-color: rgba(43, 43, 43, 0.3);"></i>
                                        <div class="d-flex flex-wrap">
                                           <h4>لورم ایپسوم متن </h4>
                                           <p><small>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </small></p>
                                        </div>
                                     </div>
                                     <div class="card-icon d-flex  mb-3">
-                                       <i class="bi bi-laptop h1 col-auto ms-4 me-2 my-auto text-success border p-4 border-success text-center"></i>
+                                       <i class="bi bi-laptop h1 col-auto ms-4 me-2 my-auto text-success border p-4 border-success text-center" style="background-color: rgba(43, 43, 43, 0.3);"></i>
                                        <div class="d-flex flex-wrap">
                                           <h4>لورم ایپسوم متن </h4>
                                           <p><small>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </small></p>
                                        </div>
                                     </div>
                                     <div class="card-icon d-flex  mb-3">
-                                       <i class="bi bi-basket2 h1 col-auto ms-4 me-2 my-auto text-success border p-4  border-success text-center"></i>
+                                       <i class="bi bi-basket2 h1 col-auto ms-4 me-2 my-auto text-success border p-4  border-success text-center" style="background-color: rgba(43, 43, 43, 0.3);"></i>
                                        <div class="d-flex flex-wrap">
                                           <h4>لورم ایپسوم متن </h4>
                                           <p><small>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </small></p>
@@ -191,231 +184,224 @@
                      </div>
                   </div>
                </section>
-
             </article>
-
-
             <article id="services">
-               <header class="header" style="padding-top: 75px;"> 
+               <header class="header" style="padding-top: 75px;">
                   <div class=" d-flex mt-2">
                      <h2 class="mb-0 mt-1">خدمات</h2>
                      <hr class="me-3 horizontal-line">
                   </div>
                   <h6>خدمات ما</h6>
                </header>
-
+               <section class="row d-flex justify-content-between mt-5">
+                  <div class="col-12 col-md-4 mt-3 " data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
+                     <div class="card services-card ">
+                        <div class="card-body text-center p-4">
+                           <p class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success px-3 py-2 rounded-1 text-light"></i></p>
+                           <h3 class="card-text mt-5">لورم ایپسوم متن ساختگی </h3>
+                           <h6 class="card-text mt-2 mb-5">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </h6>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 mt-3 " data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
+                     <div class="card services-card ">
+                        <div class="card-body text-center p-4">
+                           <p class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success px-3 py-2 rounded-1 text-light"></i></p>
+                           <h3 class="card-text mt-5">لورم ایپسوم متن ساختگی </h3>
+                           <h6 class="card-text mt-2 mb-5">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </h6>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 mt-3 " data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
+                     <div class="card services-card ">
+                        <div class="card-body text-center p-4">
+                           <p class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success px-3 py-2 rounded-1 text-light"></i></p>
+                           <h3 class="card-text mt-5">لورم ایپسوم متن ساختگی </h3>
+                           <h6 class="card-text mt-2 mb-5">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </h6>
+                        </div>
+                     </div>
+                  </div>
+               </section>
                <section class="row d-flex justify-content-between mt-4">
-                  <div class="col-12 col-md-4 mt-3">
-                     <div class="card services-card">
-                        <div class="card-body text-center">
-                           <h5 class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success col-auto m-auto px-3 py-2 rounded-1 text-light"></i></h5>
-                           <h3 class="card-text mt-4">لورم ایپسوم متن ساختگی </h3>
-                           <h6 class="card-text mt-4 mb-5">
-                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </h6>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-12 col-md-4 mt-3">
+                  <div class="col-12 col-md-4 mt-3 " data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
                      <div class="card services-card ">
-                        <div class="card-body text-center">
-                           <h5 class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success col-auto m-auto px-3 py-2 rounded-1 "></i></h5>
-                           <h3 class="card-text mt-4">لورم ایپسوم متن ساختگی </h3>
-                           <h6 class="card-text mt-4 mb-5">
-                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </h6>
+                        <div class="card-body text-center p-4">
+                           <p class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success px-3 py-2 rounded-1 text-light"></i></p>
+                           <h3 class="card-text mt-5">لورم ایپسوم متن ساختگی </h3>
+                           <h6 class="card-text mt-2 mb-5">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </h6>
                         </div>
                      </div>
                   </div>
-                  <div class="col-12 col-md-4 mt-3">
+                  <div class="col-12 col-md-4 mt-3 " data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
                      <div class="card services-card ">
-                        <div class="card-body text-center">
-                           <h5 class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success col-auto m-auto px-3 py-2 rounded-1 "></i></h5>
-                           <h3 class="card-text mt-4">لورم ایپسوم متن ساختگی </h3>
-                           <h6 class="card-text mt-4 mb-5">
-                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </h6>
+                        <div class="card-body text-center p-4">
+                           <p class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success px-3 py-2 rounded-1 text-light"></i></p>
+                           <h3 class="card-text mt-5">لورم ایپسوم متن ساختگی </h3>
+                           <h6 class="card-text mt-2 mb-5">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </h6>
                         </div>
                      </div>
                   </div>
-               </section>   
-               <section class="row d-flex justify-content-between mt-4">
-                  <div class="col-12 col-md-4 mt-3">
+                  <div class="col-12 col-md-4 mt-3 " data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
                      <div class="card services-card ">
-                        <div class="card-body text-center">
-                           <h5 class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success col-auto m-auto px-3 py-2 rounded-1 "></i></h5>
-                           <h3 class="card-text mt-4">لورم ایپسوم متن ساختگی </h3>
-                           <h6 class="card-text mt-4 mb-5">
-                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </h6>
+                        <div class="card-body text-center p-4">
+                           <p class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success px-3 py-2 rounded-1 text-light"></i></p>
+                           <h3 class="card-text mt-5">لورم ایپسوم متن ساختگی </h3>
+                           <h6 class="card-text mt-2 mb-5">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </h6>
                         </div>
                      </div>
                   </div>
-                  <div class="col-12 col-md-4 mt-3">
-                     <div class="card services-card ">
-                        <div class="card-body text-center">
-                           <h5 class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success col-auto m-auto px-3 py-2 rounded-1 "></i></h5>
-                           <h3 class="card-text mt-4">لورم ایپسوم متن ساختگی </h3>
-                           <h6 class="card-text mt-4 mb-5">
-                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </h6>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-12 col-md-4 mt-3">
-                     <div class="card services-card ">
-                        <div class="card-body text-center">
-                           <h5 class="card-title mt-5"><i class="bi bi-speedometer2 h2 bg-success col-auto m-auto px-3 py-2 rounded-1 "></i></h5>
-                           <h3 class="card-text mt-4">لورم ایپسوم متن ساختگی </h3>
-                           <h6 class="card-text mt-4 mb-5">
-                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </h6>
-                        </div>
-                     </div>
-                  </div>
-               </section>   
+               </section>
             </article>
-
             <article id="team">
-
-               <header style="padding-top: 75px;" > 
+               <header style="padding-top: 75px;" >
                   <div class=" d-flex mt-2">
                      <h2 class="mb-0 mt-1" >کادر حرفه ای ما </h2>
                      <hr class="me-3 horizontal-line">
                   </div>
                   <h6>با کادر حرفه ای شرکت پژوهش سبز آینده اشنا شوید</h6>
                </header>
+               <section class="row mt-5 ">
 
-               <section class="row d-flex justify-content-between mt-4">
-
-                  <div class="col-12 col-md-3 p-2 m-0 ">
-
-                     <div class="card services-card p-2 d-flex"> 
-                        <img src="source/gallery/person.avif" alt="" class="img-fluid card-img-top" style=" object-fit: cover;">
-
-                        <div class="card-body">
+                  <div class="col-12 col-md-3 p-2" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
+                     <div class="card services-card p-2">
+                        <figure>
+                           <img src="source/gallery/person.avif" alt="" class="img-fluid card-img-top" style=" object-fit: cover;">
                            <figcaption class="text-end">
-                              <div class="col d-flex justify-content-start mb-4">
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-facebook"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-telegram"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-instagram"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-twitter-x"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-whatsapp"></i></button>                                
+                              <div class="card-body text-center">
+                                 <div class="col d-flex justify-content-start mb-4">
+                                    <button type="button" class="btn team-card-icon" aria-label="facebook"><i class="bi bi-facebook"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="telegram"><i class="bi bi-telegram"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="instagram"><i class="bi bi-instagram"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="twitter"><i class="bi bi-twitter-x"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="whatsapp"><i class="bi bi-whatsapp"></i></button>                                
+                                 </div>
+                                 <div class="row">
+                                    <h3>ایپسوم متن</h3>
+                                 </div>
+                                 <div class="row">
+                                    <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفا</h6>
+                                 </div>
                               </div>
-                              <div class="row">
-                                 <h3>ایپسوم متن</h3>
-                              </div>
-                              <div class="row">
-                                 <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفا</h6>
-                              </div>
-                           </figcaption> 
-                                  
-                        </div>
+                           </figcaption>
+                        </figure>
                      </div>
                   </div>
-
-                  <div class="col-12 col-md-3 p-2 m-0 ">
-
-                     <div class="card services-card p-2 d-flex"> 
-                        <img src="source/gallery/person.avif" alt="" class="img-fluid card-img-top" style=" object-fit: cover;">
-
-                        <div class="card-body text-center">
+                  <div class="col-12 col-md-3 p-2" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
+                     <div class="card services-card p-2">
+                        <figure>
+                           <img src="source/gallery/person.avif" alt="" class="img-fluid card-img-top" style=" object-fit: cover;">
                            <figcaption class="text-end">
-                              <div class="col d-flex justify-content-end mb-4">
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-facebook"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-telegram"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-instagram"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-twitter-x"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-whatsapp"></i></button>                                
+                              <div class="card-body text-center">
+                                 <div class="col d-flex justify-content-start mb-4">
+                                    <button type="button" class="btn team-card-icon" aria-label="facebook"><i class="bi bi-facebook"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="telegram"><i class="bi bi-telegram"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="instagram"><i class="bi bi-instagram"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="twitter"><i class="bi bi-twitter-x"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="whatsapp"><i class="bi bi-whatsapp"></i></button>                                
+                                 </div>
+                                 <div class="row">
+                                    <h3>ایپسوم متن</h3>
+                                 </div>
+                                 <div class="row">
+                                    <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفا</h6>
+                                 </div>
                               </div>
-                              <div class="row">
-                                 <h3>ایپسوم متن</h3>
-                              </div>
-                              <div class="row">
-                                 <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفا</h6>
-                              </div>
-                           </figcaption> 
-                                  
-                        </div>
+                           </figcaption>
+                        </figure>
                      </div>
                   </div>
-
-                  <div class="col-12 col-md-3 p-2 m-0 ">
-
-                     <div class="card services-card p-2 d-flex"> 
-                        <img src="source/gallery/person.avif" alt="" class="img-fluid card-img-top" style=" object-fit: cover;">
-
-                        <div class="card-body text-center">
+                  <div class="col-12 col-md-3 p-2" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
+                     <div class="card services-card p-2">
+                        <figure>
+                           <img src="source/gallery/person.avif" alt="" class="img-fluid card-img-top" style=" object-fit: cover;">
                            <figcaption class="text-end">
-                              <div class="col d-flex justify-content-center mb-4" >
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-facebook"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-telegram"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-instagram"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-twitter-x"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-whatsapp"></i></button>                                
+                              <div class="card-body text-center">
+                                 <div class="col d-flex justify-content-start mb-4">
+                                    <button type="button" class="btn team-card-icon" aria-label="facebook"><i class="bi bi-facebook"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="telegram"><i class="bi bi-telegram"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="instagram"><i class="bi bi-instagram"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="twitter"><i class="bi bi-twitter-x"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="whatsapp"><i class="bi bi-whatsapp"></i></button>                                
+                                 </div>
+                                 <div class="row">
+                                    <h3>ایپسوم متن</h3>
+                                 </div>
+                                 <div class="row">
+                                    <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفا</h6>
+                                 </div>
                               </div>
-                              <div class="row">
-                                 <h3>ایپسوم متن</h3>
-                              </div>
-                              <div class="row">
-                                 <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفا</h6>
-                              </div>
-                           </figcaption> 
-                                  
-                        </div>
+                           </figcaption>
+                        </figure>
                      </div>
                   </div>
-
-
-                  <div class="col-12 col-md-3 p-2 m-0 ">
-
-                     <div class="card services-card p-2 d-flex"> 
-                        <img src="source/gallery/person.avif" alt="" class="img-fluid card-img-top" style=" object-fit: cover;">
-
-                        <div class="card-body text-center">
-                           <figcaptin class="text-end">
-                              <div class="col d-flex justify-content-around mb-4">
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-facebook"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-telegram"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-instagram"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-twitter-x"></i></button>
-                                 <button type="button" class="btn team-card-icon"><i class="bi bi-whatsapp"></i></button>                                
+                  <div class="col-12 col-md-3 p-2" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
+                     <div class="card services-card p-2">
+                        <figure>
+                           <img src="source/gallery/person.avif" alt="" class="img-fluid card-img-top" style=" object-fit: cover;">
+                           <figcaption class="text-end">
+                              <div class="card-body text-center">
+                                 <div class="col d-flex justify-content-start mb-4">
+                                    <button type="button" class="btn team-card-icon" aria-label="facebook"><i class="bi bi-facebook"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="telegram"><i class="bi bi-telegram"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="instagram"><i class="bi bi-instagram"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="twitter"><i class="bi bi-twitter-x"></i></button>
+                                    <button type="button" class="btn team-card-icon" aria-label="whatsapp"><i class="bi bi-whatsapp"></i></button>                                
+                                 </div>
+                                 <div class="row">
+                                    <h3>ایپسوم متن</h3>
+                                 </div>
+                                 <div class="row">
+                                    <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفا</h6>
+                                 </div>
                               </div>
-                              <div class="row">
-                                 <h3>ایپسوم متن</h3>
-                              </div>
-                              <div class="row">
-                                 <h6>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفا</h6>
-                              </div>
-                           </figcaption> 
-                                  
-                        </div>
+                           </figcaption>
+                        </figure>
                      </div>
                   </div>
-
-               </section> 
+               </section>
             </article>
-
             <article id="contact">
-               <header style="padding-top: 75px;" > 
+               <header style="padding-top: 85px;" >
                   <div class=" d-flex mt-2">
                      <h2 class="mb-0 mt-1" >تماس با ما</h2>
                      <hr class="me-3 horizontal-line">
                   </div>
                   <h6>برای اطالاعات بیشتر با ما در تماس باشید</h6>
                </header>
-               <section>
-                  <div class="row d-flex justify-content-between g-4 mt-5" >
-                     <div class="card contact-card p-2 col-12 col-md-6 border">
+               <section class="row mt-5">
+                  <div class="col-12 col-md-6 mt-3">
+                     <div class="card border">
                         <div class="card-body">
-                           <div class="row d-flex align-items-center ">
+                           <div class="row">
                               <div class="col-auto">
                                  <i class="bi bi-geo-alt-fill h2 w-auto text-success "></i>
                               </div>
                               <div class="col">
                                  <h5 class="w-auto">تماس با ما</h5>
-                                 <a href="tel:09393269992"><h6>09393269992</h6></a>
+                                 <a href="tel:09393269992" aria-label="my number">
+                                    <h6>09393269992</h6>
+                                 </a>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="card contact-card p-2 col-12 col-md-6 border">
+                  </div>
+                  <div class="col-12 col-md-6 mt-3">
+                     <div class="card border">
                         <div class="card-body">
-                           <div class="row d-flex align-items-center ">
+                           <div class="row">
                               <div class="col-auto">
                                  <i class="bi bi-telephone-fill h2 w-auto text-success "></i>
                               </div>
@@ -426,7 +412,9 @@
                            </div>
                         </div>
                      </div>
-                     <div class="card contact-card p-2 col-12 col-md-6 border">
+                  </div>
+                  <div class="col-12 col-md-6 mt-3">
+                     <div class="card border">
                         <div class="card-body">
                            <div class="row d-flex align-items-center ">
                               <div class="col-auto">
@@ -439,7 +427,9 @@
                            </div>
                         </div>
                      </div>
-                     <div class="card contact-card p-2 col-12 col-md-6 border"  >
+                  </div>
+                  <div class="col-12 col-md-6 mt-3">
+                     <div class="card border"  >
                         <div class="card-body">
                            <div class="row d-flex align-items-center ">
                               <div class="col-auto">
@@ -447,26 +437,24 @@
                               </div>
                               <div class="col">
                                  <h5 class="w-auto">Social Profile</h5>
-                                 <a href="#"><i class="bi bi-twitter-x address-icon "></i></a>
-                                 <a href="#"><i class="bi bi-youtube address-icon"></i></a>
-                                 <a href="#"><i class="bi bi-discord address-icon"></i></a>
-                                 <a href="#"><i class="bi bi-instagram address-icon"></i></a>
-                                 <a href="#"><i class="bi bi-whatsapp address-icon"></i></a>
-                                 <a href="#"><i class="bi bi-telegram address-icon"></i></a>
+                                 <a href="#" aria-label="join my twitter"><i class="bi bi-twitter-x address-icon "></i></a>
+                                 <a href="#" aria-label="join my youtube"><i class="bi bi-youtube address-icon"></i></a>
+                                 <a href="#" aria-label="join my discord"><i class="bi bi-discord address-icon"></i></a>
+                                 <a href="#" aria-label="join my instagram"><i class="bi bi-instagram address-icon"></i></a>
+                                 <a href="#" aria-label="join my whatsapp"><i class="bi bi-whatsapp address-icon"></i></a>
+                                 <a href="#" aria-label="join my telegram"><i class="bi bi-telegram address-icon"></i></a>
                               </div>
                            </div>
                         </div>
                      </div>
-                     
                   </div>
                </section>
             </article>
          </div>
-         <a href="#" class="btn btn-success position-fixed bottom-0 left-0 back-to-top rounded-0" id="back_to_top"><i class="bi bi-chevron-double-up"></i></a>
-
+         <a href="#" class="btn btn-success position-fixed bottom-0 left-0 back-to-top rounded-0" id="back_to_top" aria-label="back to top"><i class="bi bi-chevron-double-up"></i></a>
       </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="source/scripts/script.js"></script>
    </body>
-   <script src="source/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="source/scripts/script.js"></script>
 </html>

@@ -59,12 +59,10 @@ background-color: #f1f1f1
 
 .landing-main-text{
   font-size: 31px !important;
-  text-shadow: 5px 4px 8px rgb(20, 20, 20) !important;
 
 }
 .landing-caption-text{
   font-size: 21px !important;
-  text-shadow: 5px 4px 8px rgb(20, 20, 20) !important;
 }
 .landing::before {
   content: "";
@@ -129,28 +127,36 @@ background-color: #f1f1f1
 	color: #198754
 }
 
-.services-card{
-  transition: all 0.3s;
-}
-.services-card:hover{
-  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
-  transition: all 0.3s;
-}
+
+@keyframes back-to-top {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+} 
 
 .back-to-top{
   border-top-left-radius: 100% !important;
-  visibility: hidden;
+  opacity: 0;
   width: 43px;
   height: 43px;
   text-align: center;
   line-height: 43px;
   font-size: 18px;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .card{
   background-color:rgba(43, 43, 43, 0.05);
   border: none;
+  transition: all 0.3s;
+}
+.card:hover{
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
 }
 
 .team-card-icon{
