@@ -150,7 +150,7 @@ background-color: #f1f1f1
 }
 
 .card{
-  background-color:rgba(43, 43, 43, 0.05);
+  background-color:rgba(43, 43, 43, 0.06);
   border: none;
   transition: all 0.3s;
 }
@@ -183,5 +183,15 @@ background-color: #f1f1f1
   }
   .contact-card{
     width: 49%;
-    background-color:rgba(43, 43, 43, 0.05);
+    background-color:rgba(43, 43, 43, 0.06);
+  }
+
+  .team-card-icon .bi {
+    line-height: 33px; 
+    text-align: center;
+  }
+  .services-icon{
+    color: ghostwhite;
+    text-align: center;
+    line-height: 60px;
   }
