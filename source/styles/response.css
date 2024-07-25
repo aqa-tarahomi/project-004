@@ -1,4 +1,4 @@
-@media  (max-width:768px) {
+@media  (max-width:767px) {
     .navbar-nav{
         border: 1px gray solid;
         height: 100%;
@@ -33,5 +33,23 @@
       .contact-card{
         width: 100%;
       }
+      .product-img{
+        width: 100vh;
+        height: 100vh;
+        object-fit: cover ;
+        
+      }
+      .landing-iconsection-main .right{
+        margin: 0 0 0 15px !important;
+      }
+      .landing-iconsection-main .left{
+        margin: 0 15px 0 0 !important;
+      }
 
+}
+
+@media  (min-width:767px) and (max-width:850px) {
+  .navbar-brand{
+  margin: 0 !important;
+  }
 }
