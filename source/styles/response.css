@@ -45,6 +45,13 @@
       .landing-iconsection-main .left{
         margin: 0 15px 0 0 !important;
       }
+      .landing {
+        align-items: baseline;
+        justify-content: baseline;
+      }
+      .landing-main{
+        margin-top: 80px;
+      }
 
 }
 
