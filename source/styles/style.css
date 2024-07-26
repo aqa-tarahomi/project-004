@@ -57,12 +57,12 @@ body{
 }
 
 .landing-main-text{
-  font-size: 31px !important;
+  font-size: 3vh !important;
 
 
 }
 .landing-caption-text{
-  font-size: 21px !important;
+  font-size: 2vh !important;
 }
 .landing::before {
   content: "";

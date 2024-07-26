@@ -13,13 +13,13 @@
         margin: 0px !important;
     }
 
-    .landing-main-text{
+    /* .landing-main-text{
         font-size: 19px !important;
       
       }
       .landing-caption-text{
         font-size: 14px !important;
-      }
+      } */
       .landing-icon-text{
         font-size: 21px !important;
       }
@@ -48,7 +48,7 @@
       }
 
       .landing-main{
-        margin-top: 150px;
+        margin-top: 200px;
       }
 
 }
