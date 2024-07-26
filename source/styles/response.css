@@ -46,8 +46,7 @@
         margin: 0 15px 0 0 !important;
       }
       .landing {
-        align-items: baseline;
-        justify-content: baseline;
+        min-height: 80vh;
       }
       .landing-main{
         margin-top: 80px;
@@ -58,5 +57,8 @@
 @media  (min-width:767px) and (max-width:850px) {
   .navbar-brand{
   margin: 0 !important;
+  }
+  .landing {
+    min-height: 90vh;
   }
 }

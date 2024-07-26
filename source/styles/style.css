@@ -51,8 +51,14 @@ body{
   object-fit: cover;
 }
 
+.landing-caption-text , .landing-main-text{
+    text-align: center;
+  color: ghostwhite !important;
+}
+
 .landing-main-text{
   font-size: 31px !important;
+
 
 }
 .landing-caption-text{
