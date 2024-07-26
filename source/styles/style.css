@@ -118,24 +118,15 @@ body{
 
 .horizontal-line {
 	width: 15%;
-  opacity:0.4;
+  opacity:0.5;
   margin: auto 0;
 	color: #198754
 }
 
 
-@keyframes back-to-top {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-} 
-
 .back-to-top{
-  border-top-left-radius: 100%;
+  border-top-left-radius: 100% !important;
+  border-radius: 0px;
   opacity: 0;
   width: 43px;
   height: 43px;
