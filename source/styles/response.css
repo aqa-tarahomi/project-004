@@ -15,38 +15,13 @@
 
     .landing-main-text{
         font-size: 19px !important;
-      
       }
       .landing-caption-text{
         font-size: 14px !important;
       }
-      .landing-icon-text{
-        font-size: 21px !important;
-      }
-      .landing-icon{
-        font-size: 35px !important;
-      }
       .container-fluid{
         width: 100% !important;
-        margin: 0 auto;
       }
-      .contact-card{
-        width: 100%;
-      }
-      .product-img{
-        width: 100vh;
-        height: 100vh;
-        object-fit: cover ;
-        
-      }
-      .landing-iconsection-main .right{
-        margin: 0 0 0 15px !important;
-      }
-
-      .landing-iconsection-main .left{
-        margin: 0 15px 0 0 !important;
-      }
-
       .landing-main{
         margin-top: 200px;
       }
