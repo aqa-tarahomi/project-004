@@ -51,9 +51,9 @@ body{
   object-fit: cover;
 }
 
-.landing-caption-text , .landing-main-text{
+.landing-caption-text, .landing-main-text{
     text-align: center;
-  color: ghostwhite !important;
+   color: ghostwhite !important;
 }
 
 .landing-main-text{
