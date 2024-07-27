@@ -58,18 +58,12 @@ body {
 	z-index: 2;
 }
 
-.landing-caption-text,
-.landing-main-text {
-	text-align: center;
-	color: ghostwhite !important;
-}
-
-.landing-main-text{
+/* .landing-main-text{
 	font-size: 30px;
 }
 .landing-caption-text{
 	font-size: 20px;
-}
+} */
 
 .offcanvas {
 	width: 100% !important;
