@@ -35,7 +35,7 @@ body {
 }
 
 .landing {
-	min-height: 100vh;
+	min-height: 110vh;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -178,7 +178,7 @@ body {
 		font-size: 14px !important;
 	}
 	.landing {
-		min-height: 110vh;
+		align-items: end !important;	
 	}
 }
 
