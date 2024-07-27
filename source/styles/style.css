@@ -1,12 +1,12 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 @font-face {
 	font-family: "font-3";
-	src: url(../fonts/vazir/Vazirmatn-RD-Regular.woff2) format("woff2")
+	src: url(../fonts/vazir/Vazirmatn-RD-Regular.woff2) format("woff2");
 }
 
 body {
@@ -16,22 +16,22 @@ body {
 
 .nav-link,
 .navbar-brand {
-	color: ghostwhite !important
+	color: ghostwhite !important;
 }
 
 .nav-background {
 	background-color: rgba(0, 0, 0, 0.8) !important;
-	transition: all .5s
+	transition: all .5s;
 }
 
 .nav-link:hover {
-	color: #198754 !important
+	color: #198754 !important;
 }
 
 .active {
 	text-decoration: underline 2px #198754;
 	text-underline-offset: 3px;
-	transition: all .5s
+	transition: all .5s;
 }
 
 .landing {
@@ -39,14 +39,14 @@ body {
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center
+	justify-content: center;
 }
 
 .landing img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	object-fit: cover
+	object-fit: cover;
 }
 
 
@@ -55,13 +55,13 @@ body {
 	background: rgba(0, 0, 0, 0.75);
 	position: absolute;
 	inset: 0;
-	z-index: 2
+	z-index: 2;
 }
 
 .landing-caption-text,
 .landing-main-text {
 	text-align: center;
-	color: ghostwhite !important
+	color: ghostwhite !important;
 }
 
 .landing-main-text{
@@ -78,26 +78,26 @@ body {
 
 
 .landing .container-fluid {
-	z-index: 3
+	z-index: 3;
 }
 
 .landing-iconsection-main {
 	padding: 35px 23px;
 	transition: all 0.3s;
 	border: solid 1px ghostwhite;
-	border-radius: 0.35rem
+	border-radius: 0.35rem;
 }
 
 .landing-iconsection-main:hover {
 	transition: all 0.3s;
-	border-color: #198754 !important
+	border-color: #198754 !important;
 }
 
 .horizontal-line {
 	width: 15%;
 	opacity: .5;
 	margin: auto 0;
-	color: #198754
+	color: #198754;
 }
 
 .back-to-top {
@@ -115,38 +115,38 @@ body {
 .card {
 	background-color: rgba(43, 43, 43, 0.06);
 	border: 0;
-	transition: all 0.3s
+	transition: all 0.3s;
 }
 
 .card:hover {
 	box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 0.25);
-	transition: all 0.3s
+	transition: all 0.3s;
 }
 
 .team-card-icon {
 	text-align: center;
-	transition: all 0.3s
+	transition: all 0.3s;
 }
 
 .team-card-icon:hover {
 	color: #198754;
 	border: 1px solid rgba(0, 0, 0, 0.788);
-	transition: all 0.3s
+	transition: all 0.3s;
 }
 
 .address-icon {
 	color: #2c2c2c;
 	margin-left: 10px;
 	font-size: 24px;
-	transition: all .3s
+	transition: all .3s;
 }
 
 .address-icon:hover {
-	color: #198754
+	color: #198754;
 }
 
 .contact-card {
-	background-color: rgba(43, 43, 43, 0.06)
+	background-color: rgba(43, 43, 43, 0.06);
 }
 
 
@@ -157,38 +157,38 @@ body {
 .product-img {
 	width: 70vh;
 	height: 70vh;
-	object-fit: cover
+	object-fit: cover;
 }
 
 @media(max-width:767px) {
 	.navbar-nav {
 		border: 1px gray solid;
 		height: 100%;
-		margin: 0 20px
+		margin: 0 20px;
 	}
 
 	.nav-link {
-		color: black !important
+		color: black !important;
 	}
 
 	.navbar-brand {
-		margin: 0 !important
+		margin: 0 !important;
 	}
 
 	.landing-main-text {
-		font-size: 19px !important
+		font-size: 19px;
 	}
 
 	.landing-caption-text {
-		font-size: 14px !important
+		font-size: 14px !important;
 	}
 
 	.container-fluid {
-		width: 100% !important
+		width: 100% !important;
 	}
 
 	.landing-main {
-		margin-top: 200px
+		margin-top: 200px;
 	}
 	.landing::before {
 		min-height: 164vh;
