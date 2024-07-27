@@ -4,13 +4,13 @@
 	box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
 	font-family: "font-3";
 	src: url(../fonts/vazir/Vazirmatn-RD-Regular.woff2) format("woff2");
-}
+} */
 
 body {
-	font-family: "font-3" !important;
+	/* font-family: "font-3" !important; */
 	font-weight: 400;
 	image-rendering: pixelated;
 }
