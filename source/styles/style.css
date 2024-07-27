@@ -64,6 +64,12 @@ body {
 	color: ghostwhite !important
 }
 
+.landing-main-text{
+	font-size: 30px;
+}
+.landing-caption-text{
+	font-size: 20px;
+}
 
 .offcanvas {
 	width: 100% !important;
