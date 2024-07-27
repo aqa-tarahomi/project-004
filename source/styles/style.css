@@ -172,11 +172,13 @@ body {
 
 	.landing-main-text {
 		font-size: 19px !important;
-		margin-top: 50px;
 	}
 
 	.landing-caption-text {
 		font-size: 14px !important;
+	}
+	.landing {
+		min-height: 120vh;
 	}
 }
 
