@@ -171,7 +171,7 @@ body {
 	}
 
 	.landing-main-text {
-		font-size: 19px;
+		font-size: 19px !important;
 	}
 
 	.landing-caption-text {
