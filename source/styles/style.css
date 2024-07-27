@@ -58,12 +58,13 @@ body {
 	z-index: 2;
 }
 
-/* .landing-main-text{
-	font-size: 30px;
+.landing-main-text{
+	font-size: 28px;
+	margin-bottom: 20px;
 }
 .landing-caption-text{
-	font-size: 20px;
-} */
+	font-size: 18px;
+}
 
 .offcanvas {
 	width: 100% !important;
@@ -154,7 +155,7 @@ body {
 	object-fit: cover;
 }
 
-@media(max-width:767px) {
+@media (max-width:767px) {
 	.navbar-nav {
 		border: 1px gray solid;
 		height: 100%;
@@ -175,17 +176,6 @@ body {
 
 	.landing-caption-text {
 		font-size: 14px !important;
-	}
-
-	.container-fluid {
-		width: 100% !important;
-	}
-
-	.landing-main {
-		margin-top: 200px;
-	}
-	.landing::before {
-		min-height: 164vh;
 	}
 }
 
