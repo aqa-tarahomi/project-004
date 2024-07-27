@@ -34,7 +34,7 @@ body {
 	transition: all .5s
 }
 
-.landing {
+/* .landing {
 	background:radial-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.76)) ,url(../gallery/hero-bg.webp);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -42,6 +42,29 @@ body {
 	background-size: cover;
 	min-height: 100vh;
 
+} */
+.landing {
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.landing img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
+
+
+.landing::before {
+	content: "";
+	background: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	inset: 0;
+	z-index: 2
 }
 
 .landing-caption-text,
