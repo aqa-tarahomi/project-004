@@ -12,6 +12,7 @@
 body {
 	font-family: "font-3";
 	font-weight: 400;
+	image-rendering: optimizeSpeed;
 }
 
 .nav-link,
