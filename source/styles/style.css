@@ -176,9 +176,6 @@ body {
 	.landing-caption-text {
 		font-size: 14px !important;
 	}
-	.landing {
-		align-items: end !important;	
-	}
 }
 
 @media(min-width:767px) and (max-width:850px) {
