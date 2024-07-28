@@ -4,13 +4,13 @@
 	box-sizing: border-box;
 }
 
-/* @font-face {
+@font-face {
 	font-family: "font-3";
 	src: url(../fonts/vazir/Vazirmatn-RD-Regular.woff2) format("woff2");
-} */
+}
 
 body {
-	/* font-family: "font-3" !important; */
+	font-family: "font-3" !important;
 	font-weight: 400;
 	image-rendering: pixelated;
 }
@@ -38,9 +38,7 @@ body {
 .landing {
 	min-height: 110vh;
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
 }
 
 .landing img {
@@ -78,7 +76,7 @@ body {
 }
 
 .landing-iconsection-main {
-	padding: 35px 23px;
+	padding: 28px 0;
 	transition: all 0.3s;
 	border: solid 1px ghostwhite;
 	border-radius: 0.35rem;
