@@ -11,7 +11,7 @@
 }
 
 body {
-	font-family: "font-3" !important;
+	font-family: "font-3";
 	font-weight: 400;
 	image-rendering: pixelated;
 	text-rendering: optimizeSpeed;
@@ -20,22 +20,23 @@ body {
 
 .nav-link,
 .navbar-brand {
-	color: ghostwhite !important;
+	color: ghostwhite;
 }
 
 .nav-background {
-	background-color: rgba(0, 0, 0, 0.8) !important;
+	background-color: rgba(0, 0, 0, 0.8);
 	transition: all .5s;
 }
 
 .nav-link:hover {
-	color: #198754 !important;
+	color: #198754;
 }
 
 .active {
 	text-decoration: underline 2px #198754;
 	text-underline-offset: 3px;
 	transition: all .5s;
+	color: ghostwhite !important;
 }
 
 .landing {
@@ -69,8 +70,8 @@ body {
 }
 
 .offcanvas {
-	width: 100% !important;
-	background-color: ghostwhite;
+	width: 70% !important;
+	background-color: rgba(248, 248, 255,);
 }
 
 
@@ -86,8 +87,7 @@ body {
 }
 
 .landing-iconsection-main:hover {
-	transition: all 0.3s;
-	border-color: #198754 !important;
+	border-color: #198754;
 }
 
 .horizontal-line {
@@ -111,13 +111,11 @@ body {
 
 .card {
 	background-color: rgba(43, 43, 43, 0.06);
-	border: 0;
 	transition: all 0.3s;
 }
 
 .card:hover {
 	box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 0.25);
-	transition: all 0.3s;
 }
 
 .team-card-icon {
@@ -144,7 +142,6 @@ body {
 .team-card-icon:hover {
 	color: #198754;
 	border: 1px solid rgba(0, 0, 0, 0.788);
-	transition: all 0.3s;
 }
 
 .address-icon {
@@ -193,16 +190,16 @@ body {
 	}
 
 	.landing-main-text {
-		font-size: 19px !important;
+		font-size: 19px;
 	}
 
 	.landing-caption-text {
-		font-size: 14px !important;
+		font-size: 14px;
 	}
 }
 
 @media(min-width:767px) and (max-width:850px) {
 	.navbar-brand {
-		margin: 0 !important
+		margin: 0 !important;
 	}
 }
