@@ -173,6 +173,27 @@ body {
 	height: 70vh;
 	object-fit: cover;
 }
+.product-hover{
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center
+	
+}
+.product-main{
+	position: relative;
+}
+.product-main:hover .product-hover{
+	opacity: 1;	
+}
+.product-main:hover .product-img{
+	opacity: 0.4;
+	transition: all 0.3s;
+
+}
 
 @media (max-width:767px) {
 	.navbar-nav {
