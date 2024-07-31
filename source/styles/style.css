@@ -1,1 +1,238 @@
-*{margin:0;padding:0;box-sizing:border-box}@font-face{font-family:"font-3";src:url(../fonts/vazir/Vazirmatn-RD-Regular.woff2) format("woff2");font-display:swap}body{font-family:"font-3";font-weight:400;image-rendering:pixelated;text-rendering:optimizeSpeed;shape-rendering:optimizeSpeed}.nav-link,.navbar-brand{color:ghostwhite}.nav-background{background-color:rgba(0,0,0,0.8);transition:all .5s}.nav-link:hover{color:#198754}.active{text-decoration:underline 2px #198754;text-underline-offset:3px;transition:all .5s;color:ghostwhite !important}.landing{min-height:110vh;position:relative;text-align:center}.landing img{position:absolute;width:100%;height:100%;object-fit:cover}.landing::before{content:"";background:rgba(0,0,0,0.75);position:absolute;inset:0;z-index:2}.landing-main-text{font-size:28px;margin-bottom:2vh}.landing-caption-text{font-size:18px}.offcanvas{width:70% !important;background-color:rgba(248,248,255,)}.landing .container-fluid{z-index:3}.landing-iconsection-main{padding:28px 0;transition:all .3s;border:solid 1px ghostwhite;border-radius:.35rem}.landing-iconsection-main:hover{border-color:#198754}.horizontal-line{width:15%;opacity:.5;margin:auto 0;color:#198754}.back-to-top{border-top-left-radius:100% !important;border-radius:0;opacity:0;width:43px;height:43px;line-height:43px;font-size:18px;transition:all .5s;z-index:3}.card{background-color:rgba(43,43,43,0.06);transition:all .3s}.card:hover{box-shadow:.1rem .1rem .3rem rgba(0,0,0,0.25)}.team-card-icon{text-align:center;transition:all .3s;height:44px;width:44px;line-height:34px;font-size:18px;text-align:center}.card-icon i{font-size:35px;margin-left:10px;border:1px #198754 solid;color:#198754;border-radius:4px;width:60px;height:60px;text-align:center;line-height:60px}.team-card-icon:hover{color:#198754;border:1px solid rgba(0,0,0,0.788)}.address-icon{color:#2c2c2c;margin-left:10px;font-size:24px;transition:all .3s}.address-icon:hover{color:#198754}.contact-card{background-color:rgba(43,43,43,0.06)}.services-icon{color:ghostwhite;background-color:#198754;font-size:30px;border-radius:5px;padding:15px}.product-img{width:70vh;height:70vh;object-fit:cover}.product-hover{opacity:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);text-align:center}.product-main{position:relative}.product-main:hover .product-hover{opacity:1}.product-main:hover .product-img{opacity:.4;transition:all .3s}@media(max-width:767px){.navbar-nav{border:1px gray solid;height:100%;margin:0 20px}.nav-link{color:black !important}.navbar-brand{margin:0 !important}.landing-main-text{font-size:19px}.landing-caption-text{font-size:14px}}@media(min-width:767px) and (max-width:850px){.navbar-brand{margin:0 !important}}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+	
+}
+
+@font-face {
+	font-family: "font-3";
+	src: url(../fonts/vazir/Vazirmatn-RD-Regular.woff2) format("woff2");
+	font-display: swap
+}
+
+body {
+	font-family: "font-3";
+	font-weight: 400;
+	image-rendering: pixelated;
+	text-rendering: optimizeSpeed;
+	shape-rendering: optimizeSpeed
+}
+
+.nav-link,
+.navbar-brand {
+	color: ghostwhite
+}
+
+.nav-background {
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: all .5s
+}
+
+.nav-link:hover {
+	color: #198754
+}
+
+.active {
+	text-decoration: underline 2px #198754;
+	text-underline-offset: 3px;
+	transition: all .5s;
+	color: ghostwhite !important
+}
+
+.landing {
+	min-height: 110vh;
+	position: relative;
+	text-align: center
+}
+
+.landing img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
+
+.landing::before {
+	content: "";
+	background: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	inset: 0;
+	z-index: 2
+}
+
+.landing-main-text {
+	font-size: 28px;
+	margin-bottom: 2vh
+}
+
+.landing-caption-text {
+	font-size: 18px
+}
+
+.offcanvas {
+	width: 70% !important;
+	background-color: rgba(248, 248, 255, )
+}
+
+.landing .container-fluid {
+	z-index: 3
+}
+
+.landing-iconsection-main {
+	padding: 28px 0;
+	transition: all .3s;
+	border: solid 1px ghostwhite;
+	border-radius: .35rem
+}
+
+.landing-iconsection-main:hover {
+	border-color: #198754
+}
+
+.horizontal-line {
+	width: 15%;
+	opacity: .5;
+	margin: auto 0;
+	color: #198754
+}
+
+.back-to-top {
+	border-top-left-radius: 100% !important;
+	border-radius: 0;
+	opacity: 0;
+	width: 43px;
+	height: 43px;
+	line-height: 43px;
+	font-size: 18px;
+	transition: all .5s;
+	z-index: 3
+}
+.back-to-top:lang(en) {
+	border-top-right-radius: 100% ;
+	border-top-left-radius: 0px !important;
+}
+
+.card {
+	background-color: rgba(43, 43, 43, 0.06);
+	transition: all .3s
+}
+
+.card:hover {
+	box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 0.25)
+}
+
+.team-card-icon {
+	text-align: center;
+	transition: all .3s;
+	height: 44px;
+	width: 44px;
+	line-height: 34px;
+	font-size: 18px;
+	text-align: center
+}
+
+.card-icon i {
+	font-size: 35px;
+	margin-left: 10px;
+	border: 1px #198754 solid;
+	color: #198754;
+	border-radius: 4px;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px
+}
+.card-icon i:lang(en) {
+	margin-left: 0 !important;
+	margin-right: 14px;
+
+}
+
+
+.team-card-icon:hover {
+	color: #198754;
+	border: 1px solid rgba(0, 0, 0, 0.788)
+}
+
+.address-icon {
+	color: #2c2c2c;
+	margin-left: 10px;
+	font-size: 24px;
+	transition: all .3s
+}
+
+.address-icon:hover {
+	color: #198754
+}
+
+.contact-card {
+	background-color: rgba(43, 43, 43, 0.06)
+}
+
+.services-icon {
+	color: ghostwhite;
+	background-color: #198754;
+	font-size: 30px;
+	border-radius: 5px;
+	padding: 15px
+}
+
+.product-img {
+	width: 70vh;
+	height: 70vh;
+	object-fit: cover
+}
+
+.product-hover {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center
+}
+
+.product-main {
+	position: relative
+}
+
+.product-main:hover .product-hover {
+	opacity: 1
+}
+
+.product-main:hover .product-img {
+	opacity: .4;
+	transition: all .3s
+}
+
+@media(max-width:767px) {
+	.navbar-nav {
+		border: 1px gray solid;
+		height: 100%;
+		margin: 0 20px
+	}
+
+	.nav-link {
+		color: black !important
+	}
+
+	.navbar-brand {
+		margin: 0 !important
+	}
+
+	.landing-main-text {
+		font-size: 19px
+	}
+
+	.landing-caption-text {
+		font-size: 14px
+	}
+}
+
+@media(min-width:767px) and (max-width:850px) {
+	.navbar-brand {
+		margin: 0 !important
+	}
+}
