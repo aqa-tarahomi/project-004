@@ -170,3 +170,4 @@ const change_lang= document.getElementById("change-lang-button")
 })
 console.log(document.documentElement.getAttribute("lang"));
 window.localStorage
+const x = JSON.parse(window)
