@@ -13,18 +13,8 @@ function navscroll() {
        t >= o.offsetTop && t <= o.offsetTop + o.offsetHeight ? (document.querySelectorAll(".navmenu a.active").forEach(e => e.classList.remove("active")), e.classList.add("active")) : e.classList.remove("active")
     })
  }
-//  function change_lang(){
-//         if (document.documentElement.getAttribute('lang') == 'fa') {
-//             document.getElementById("landing").innerHTML="Home"
-//             document.getElementById("about").innerHTML="About Us"
-//             document.getElementById("services").innerHTML="Our Services"
-//             document.getElementById("protofilo").innerHTML="Protofilo"
-//             document.getElementById("team").innerHTML="Our Team"
-//             document.getElementById("contact").innerHTML="Contact Us"
-//             document.documentElement.setAttribute('lang' , 'en')
-//         }
-//         else{
-
-//         }
-//  }
  window.addEventListener("load", navmenuScrollspy), document.addEventListener("scroll", navmenuScrollspy);
+
+
+
+        
