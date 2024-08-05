@@ -2,6 +2,7 @@
 const langSelector = document.getElementById('language-selector')
 const farsi = document.getElementById("language-selected-fa")
 const english = document.getElementById("language-selected-en")
+const lang_select_text= document.getElementById("language-select-text");
 
 
 
@@ -93,7 +94,8 @@ window.addEventListener("change" , () => {
       document.documentElement.setAttribute('dir', 'ltr');
       navv.classList.add("offcanvas-start");
       navv.classList.remove("offcanvas-end");
-      langSelector.style.backgroundImage="url(source/gallery/united-states-of-america-flag-large.png)"
+      langSelector.style.backgroundImage='url("source/gallery/united-kingdom-flag-xl.png")'
+      lang_select_text.innerHTML="English/en"
    }
    if (document.documentElement.getAttribute('lang') == 'fa') {
       document.getElementById("landing-text").innerHTML = "صفحه نخست"
@@ -178,7 +180,7 @@ window.addEventListener("change" , () => {
       navv.classList.remove("offcanvas-start");
       navv.classList.add("offcanvas-end");  
       langSelector.style.backgroundImage=" url(source/gallery/iran-flag-xs.png)"
-
+      lang_select_text.innerHTML='فارسی/fa'
    }
 })
 
@@ -264,7 +266,8 @@ window.addEventListener("load" , () => {
       document.documentElement.setAttribute('dir', 'ltr');
       navv.classList.add("offcanvas-start");
       navv.classList.remove("offcanvas-end");
-      langSelector.style.backgroundImage="url(source/gallery/united-states-of-america-flag-large.png)"
+      langSelector.style.backgroundImage='url("source/gallery/united-kingdom-flag-xl.png")'
+      lang_select_text.innerHTML="English/en"
    }
    if (document.documentElement.getAttribute('lang') == 'fa') {
       document.getElementById("landing-text").innerHTML = "صفحه نخست"
@@ -349,5 +352,6 @@ window.addEventListener("load" , () => {
       navv.classList.remove("offcanvas-start");
       navv.classList.add("offcanvas-end");
       langSelector.style.backgroundImage=" url(source/gallery/iran-flag-xs.png)"
+      lang_select_text.innerHTML='فارسی/fa'
    }
 })

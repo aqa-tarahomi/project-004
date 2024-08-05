@@ -71,7 +71,7 @@ body {
 }
 
 .offcanvas {
-	width: 70% !important;
+	width: 80% !important;
 	background-color: rgba(248, 248, 255, )
 }
 
@@ -108,10 +108,7 @@ body {
 	transition: all .5s;
 	z-index: 3
 }
-.back-to-top:lang(en) {
-	border-top-right-radius: 100% ;
-	border-top-left-radius: 0px !important;
-}
+
 
 .card {
 	background-color: rgba(43, 43, 43, 0.06);
@@ -143,11 +140,7 @@ body {
 	text-align: center;
 	line-height: 60px
 }
-.card-icon i:lang(en) {
-	margin-left: 0 !important;
-	margin-right: 14px;
 
-}
 
 
 .team-card-icon:hover {
@@ -207,11 +200,10 @@ body {
 	transition: all .3s
 }
 .form-select{
-	background-image: url("../gallery/united-states-of-america-flag-large.png");
+	background-image: url("../gallery/iran-flag-xs.png");
 	background-position: center;
 	background-size: 100%;
 	object-fit: cover;
-	padding-right: 50px;
 	color: transparent;
 
 }
@@ -243,4 +235,19 @@ body {
 	.navbar-brand {
 		margin: 0 !important
 	}
+}
+
+.card-icon i:lang(en) {
+	margin-left: 0 !important;
+	margin-right: 14px;
+}
+
+.back-to-top:lang(en) {
+	border-top-right-radius: 100% ;
+	border-top-left-radius: 0px !important;
+}
+
+.navbar-brand:lang(en){
+	margin-left: 0 !important;
+	margin-right: 40px;
 }
