@@ -141,6 +141,10 @@ body {
 	line-height: 60px
 }
 
+.team-card-img{
+	height: 60vh !important;
+	object-fit: cover;
+}
 
 
 .team-card-icon:hover {
@@ -229,13 +233,38 @@ body {
 	.landing-caption-text {
 		font-size: 14px
 	}
+
+	.team-card-img{
+		height: 50vh !important;
+	}
+}
+@media (min-width:550px) and (max-width:767px) {
+	.team-card-img{
+		height: 80vh !important;
+	}
 }
 
 @media(min-width:767px) and (max-width:850px) {
 	.navbar-brand {
 		margin: 0 !important
 	}
+
+	.team-card-img{
+		height: 40vh !important;
+	}
 }
+
+@media (min-width:992px) and (max-width:1300px) {
+	.team-card-img{
+		height: 30vh !important;
+	}
+	
+}
+/* @media (min-width:1300px) and (max-width:1400px) {
+	.team-card-img{
+		height: 10vh !important;
+	}
+} */
 
 .card-icon i:lang(en) {
 	margin-left: 0 !important;
