@@ -18,12 +18,15 @@ body {
 	font-weight: 400;
 }
 
-.text-success, .icon-box i, .nav-link:hover,.prime-color {
+.text-success, .icon-box i, .nav-link:hover,.prime-color,.navbar-toggler {
 	color: var(--primary-color) !important;
 }
 
 .nav-link, .navbar-brand, .icon-box h3, .active {
 	color: var(--secondary-color) !important;
+}
+.landing-text-section{
+	width: 65%;
 }
 
 .nav-background {
@@ -64,17 +67,16 @@ body {
 
 .landing-caption-text {
 	font-size: 18px;
-	color: color-mix(in srgb, var(--primary-color), transparent 70%);
+	color: var(--primary-color);
 }
 
 .offcanvas {
 	width: 100% !important;
-	background-color: var(--background-light);
+	background-color: #222222f1;
 }
-
 .icon-box {
 	padding: 30px 20px;
-	border: 1px solid color-mix(in srgb, var(--secondary-color), transparent 70%);
+	border: 1px solid color-mix(in srgb, var(--secondary-color) 30%, transparent 70%);
 	height: 100%;
 	text-align: center;
 	display: flex;
@@ -164,32 +166,66 @@ body {
   }
   .fa-brands:hover{
 	transition: all 0.3s;
-	&.fa-html5{color: #ff6c36;}
-	&.fa-css3-alt{color: #00bfff;}
-	&.fa-square-js{color: #ffff00;}
-	&.fa-node-js{color: #44883e}
-	&.fa-bootstrap{color: #d300d3;}
-	&.fa-php{color: #6495ed;}
-	&.fa-database{color: #ffa500;}
-	&.fa-react{color: #61dafb;}
-	&.fa-java{background: linear-gradient(to top, #5282a1 50%, #cf730a 50%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
-	&.fa-laravel{color: #f05340;}
 }
+    .fa-html5:hover{
+		color: #ff6c36;
+	}
+	.fa-css3-alt:hover{
+		color: #00bfff;
+	}
+	.fa-square-js:hover{
+		color: #ffff00;
+	}
+	.fa-node-js:hover{
+		color: #44883e
+	}
+	.fa-bootstrap:hover{
+		color: #d300d3;
+	}
+	.fa-php:hover{
+		color: #6495ed;
+	}
+	.fa-database:hover{
+		color: #ffa500;
+	}
+	.fa-react:hover{
+		color: #61dafb;
+	}
+	.fa-java:hover
+	{background: linear-gradient(to top, #5282a1 50%, #cf730a 50%);
+		 -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		}
+	.fa-laravel:hover{
+		color: #f05340;
+	}
 
 @media (max-width: 767px) {
-	.nav-link {
-		color: black !important;
-	}
 	.navbar-brand {
 		margin: 0 !important;
 	}
 	.landing-main-text {
-		font-size: 19px;
+		font-size: 25px;
 	}
 	.landing-caption-text {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.landing {
 		padding: 140px 0 80px;
+	}
+	.landing-text-section{
+		width: 100%;
+	}
+	.navbar-nav{
+        border: 1px gray solid;
+        height: 100%;
+        margin: 0 15px;
+    }
+	.about-text-section{
+		order: 2;
+		margin-top: 7%;
+	}
+	.about-image-section{
+		order: 1;
 	}
 }
