@@ -1,0 +1,195 @@
+:root {
+	--primary-color: #18d26e;
+	--secondary-color: ghostwhite;
+	--overlay-color: rgba(0, 0, 0, 0.7);
+	--background-dark: rgba(0, 0, 0, 0.8);
+	--background-light: rgba(248, 248, 255, 0.89);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type:none;
+}
+
+body {
+	font-family: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 400;
+}
+
+.text-success, .icon-box i, .nav-link:hover,.prime-color {
+	color: var(--primary-color) !important;
+}
+
+.nav-link, .navbar-brand, .icon-box h3, .active {
+	color: var(--secondary-color) !important;
+}
+
+.nav-background {
+	background-color: var(--background-dark);
+	transition: all .5s;
+}
+
+.nav-link:hover, .active {
+	text-decoration: underline 2px var(--primary-color) !important;
+	text-underline-offset: 3px;
+}
+
+.landing {
+	min-height: 100vh;
+	background: url(../gallery/hero-bg.webp) center/cover no-repeat fixed;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+	position: relative;
+}
+
+.landing::before {
+	content: "";
+	background: var(--overlay-color);
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+}
+
+.landing .container, .container-fluid {
+	z-index: 3;
+}
+
+.landing-main-text {
+	font-size: 57px;
+	font-weight: 700;
+	font-family: sans-serif;
+	margin-bottom: 2vh;
+}
+
+.landing-caption-text {
+	font-size: 18px;
+	color: color-mix(in srgb, var(--primary-color), transparent 70%);
+}
+
+.offcanvas {
+	width: 100% !important;
+	background-color: var(--background-light);
+}
+
+.icon-box {
+	padding: 30px 20px;
+	border: 1px solid color-mix(in srgb, var(--secondary-color), transparent 70%);
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: ease-in-out 0.3s;
+}
+
+.icon-box:hover{
+	border: 1px solid var(--primary-color);
+	& h3{
+		color: var(--primary-color) !important;
+	}
+}
+
+.icon-box h3 {
+	font-weight: 700;
+	margin: 10px 0 0;
+	font-size: 20px !important;
+	line-height: 26px;
+	transition: ease-in-out 0.3s;
+}
+.icon-box i {
+	font-size: 32px;
+}
+
+.back-to-top {
+	border-top-left-radius: 100%;
+	width: 43px;
+	height: 43px;
+	line-height: 43px;
+	font-size: 18px;
+	transition: all .5s;
+	z-index: 3;
+	opacity: 0;
+}
+
+.horizontal-line {
+	width: 15%;
+	opacity: .5;
+	margin: auto 0;
+	color: var(--primary-color);
+}
+.card{
+	border: none ;
+	padding:0 60px;
+}
+
+.card-body{
+	text-align: justify;
+	width: 97%;
+}
+.article{
+    padding: 60px 0;
+    scroll-margin-top: 80px;
+    overflow: clip;
+}
+.card-title{
+	font-weight: 700;
+}
+.card-body ul li{
+	padding: 10px 0 0 0;
+    display: flex;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .swiper-image {
+	object-fit: cover;
+	width: 100px;
+  }
+  .fa-brands{
+	color: rgb(155, 155, 155);
+  }
+  .fa-brands:hover{
+	transition: all 0.3s;
+	&.fa-html5{color: #ff6c36;}
+	&.fa-css3-alt{color: #00bfff;}
+	&.fa-square-js{color: #ffff00;}
+	&.fa-node-js{color: #44883e}
+	&.fa-bootstrap{color: #d300d3;}
+	&.fa-php{color: #6495ed;}
+	&.fa-database{color: #ffa500;}
+	&.fa-react{color: #61dafb;}
+	&.fa-java{background: linear-gradient(to top, #5282a1 50%, #cf730a 50%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+	&.fa-laravel{color: #f05340;}
+}
+
+@media (max-width: 767px) {
+	.nav-link {
+		color: black !important;
+	}
+	.navbar-brand {
+		margin: 0 !important;
+	}
+	.landing-main-text {
+		font-size: 19px;
+	}
+	.landing-caption-text {
+		font-size: 14px;
+	}
+	.landing {
+		padding: 140px 0 80px;
+	}
+}
