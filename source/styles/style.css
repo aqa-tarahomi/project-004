@@ -161,11 +161,14 @@ body {
 	object-fit: cover;
 	width: 100px;
   }
-  .fa-brands{
+  .fa-brands,.fa-solid{
+	transition: all .5s;
+  }
+  .fa-brands,.fa-solid{
 	color: rgb(155, 155, 155);
   }
-  .fa-brands:hover{
-	transition: all 0.3s;
+  .fa-brands,.fa-solid:hover{
+	transition: all .5s;
 }
     .fa-html5:hover{
 		color: #ff6c36;
