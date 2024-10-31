@@ -67,7 +67,7 @@ body {
 
 .landing-caption-text {
 	font-size: 18px;
-	color: var(--primary-color);
+	color: rgba(24, 210, 111, 0.8);
 }
 
 .offcanvas {
@@ -76,7 +76,7 @@ body {
 }
 .icon-box {
 	padding: 30px 20px;
-	border: 1px solid color-mix(in srgb, var(--secondary-color) 30%, transparent 70%);
+	border: 1px solid rgba(248, 248, 255, 0.3);
 	height: 100%;
 	text-align: center;
 	display: flex;
@@ -205,10 +205,10 @@ body {
 		margin: 0 !important;
 	}
 	.landing-main-text {
-		font-size: 25px;
+		font-size: 32px;
 	}
 	.landing-caption-text {
-		font-size: 16px;
+		font-size: 19px;
 	}
 	.landing {
 		padding: 140px 0 80px;
