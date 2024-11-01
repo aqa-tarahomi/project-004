@@ -195,12 +195,61 @@ body {
 		color: #61dafb;
 	}
 	.fa-java:hover
-	{background: linear-gradient(to top, #5282a1 50%, #cf730a 50%);
+	{
+		background:  linear-gradient(0deg, rgba(82,130,161,1) 46%, rgba(207,115,10,1) 46%);
 		 -webkit-background-clip: text;
 		  -webkit-text-fill-color: transparent;
 		}
 	.fa-laravel:hover{
 		color: #f05340;
+	}
+
+.html5-title {
+    color: #ff6c36;
+}
+
+.css3-title {
+    color: #00bfff;
+}
+
+.js-title {
+    color: #ffff00;
+}
+
+.node-title {
+    color: #44883e;
+}
+
+.bootstrap-title {
+    color: #d300d3;
+}
+
+.php-title {
+    color: #6495ed;
+}
+
+.sql-title {
+    color: #ffa500;
+}
+
+.react-title {
+    color: #61dafb;
+}
+
+.java-title {
+	background:  linear-gradient(0deg, rgba(82,130,161,1) 43%, rgba(207,115,10,1) 43%);
+	 -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+}
+
+.laravel-title {
+    color: #f05340;
+}
+
+	
+	swiper-slide{
+		text-align: center;
+		margin-bottom: 40px;
 	}
 
 @media (max-width: 767px) {
