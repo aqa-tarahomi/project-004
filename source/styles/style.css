@@ -38,10 +38,6 @@ main{
 	color: var(--secondary-color) !important;
 }
 
-.landing-text-section {
-	width: 65%;
-}
-
 .nav-background {
 	background-color: var(--background-dark);
 	transition: all .5s;
@@ -74,7 +70,7 @@ main{
 
 
 .landing-main-text {
-	font-size: 57px;
+	font-size: 55px;
 	font-weight: 700;
 	font-family: sans-serif;
 	margin-bottom: 2vh;
@@ -190,7 +186,7 @@ main{
 
 .fa-brands,
 .fa-solid {
-	transition: all .5s;
+	transition: all .5s !important;
 }
 
 .fa-brands,
@@ -203,45 +199,45 @@ main{
 	transition: all .5s;
 }
 
-.fa-html5:hover {
+.fa-html5:hover , .services-card:hover .fa-html5 {
 	color: #ff6c36;
 }
 
-.fa-css3-alt:hover {
+.fa-css3-alt:hover , .services-card:hover .fa-css3-alt {
 	color: #00bfff;
 }
 
-.fa-square-js:hover {
+.fa-square-js:hover , .services-card:hover .fa-square-js{
 	color: #ffff00;
 }
 
-.fa-node-js:hover {
+.fa-node-js:hover{
 	color: #44883e
 }
 
-.fa-bootstrap:hover {
+.fa-bootstrap:hover{
 	color: #d300d3;
 }
 
-.fa-php:hover {
+.fa-php:hover , .services-card:hover .fa-php{
 	color: #6495ed;
 }
 
-.fa-database:hover {
+.fa-database:hover{
 	color: #ffa500;
 }
 
-.fa-react:hover {
+.fa-react:hover{
 	color: #61dafb;
 }
 
-.fa-java:hover {
+.fa-java:hover , .services-card:hover .fa-java{
 	background: linear-gradient(0deg, rgba(82, 130, 161, 1) 46%, rgba(207, 115, 10, 1) 46%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-.fa-laravel:hover {
+.fa-laravel:hover , .services-card:hover .fa-laravel{
 	color: #f05340;
 }
 
@@ -334,9 +330,29 @@ swiper-slide {
   .header-color{
 	color: var(--header-text-color);
 }
-@media (max-width: 767px) {
+.services-card{
+	width: 32%;
+	background-color: rgba(0, 0, 0, 0.15);
+	transition: all .5s !important;
+}
+.services-card:hover{
+	transform: translateY(-7px) !important;
+	transition: all .5s !important;
+}
+
+.services-header{
+	color: var(--header-text-color);
+}
+.services-icon{
+	color: black;
+}
+	@media (max-width: 992px) {
 	.navbar-brand {
 		margin: 0 !important;
+	}
+
+	.services-card{
+		width: 98.5% ;
 	}
 
 	.landing-main-text {
@@ -372,6 +388,30 @@ swiper-slide {
 	.article-background-header-text{
 		font-size: 60px;
 	} 
+
+}
+@media (min-width:992px) and (max-width:1200px) {
+	.landing-main-text{
+		font-size: 53px;
+	}
+
+}
+@media (min-width:767px) and (max-width:992px) {
+	.landing-main-text{
+		font-size: 50px;
+	}
+	.landing-text-section {
+		width: 100% !important;
+	}
+	.services-card{
+		width: 48.5% !important;
+	}
+}
+
+@media (max-width:1000px) {
+	.nav-container{
+		width: 100% !important;
+	}
 }
 
 @keyframes fadeInUp {
