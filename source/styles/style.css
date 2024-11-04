@@ -1,10 +1,10 @@
 :root {
-	--primary-color:   #228B22;
+	--primary-color:   rgb(72, 190, 100);
 	--secondary-color: ghostwhite;
 	--overlay-color: rgba(0, 0, 0, 0.7);
 	--background-dark: rgba(0, 0, 0, 0.8);
 	--background-light: rgba(248, 248, 255, 0.89);
-	--header-text-color:#191970;
+	--header-text-color:#1d1d85;
 }
 
 * {
@@ -320,8 +320,21 @@ swiper-slide {
   }
 
   .info-icon{
-	color: var(--primary-color);
+	/* color: var(--primary-color); */
+	color: black;
 	/* text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4); */
+  }
+  .info-text-card:hover .info-icon{
+	color: var(--primary-color);
+  }
+  .info-text-card:hover{
+	box-shadow:  0px 0px 10px 5px rgba(0, 0, 0, 0.185);
+
+  }
+  .info-text-card{
+	padding: 15px;
+	border-radius: 12px;
+	margin: 0px !important;
   }
 
   .info-icon-head-text{
@@ -332,7 +345,7 @@ swiper-slide {
 }
 .services-card{
 	width: 32%;
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color:rgb(246, 246, 246);
 	transition: all .5s !important;
 }
 .services-card:hover{
