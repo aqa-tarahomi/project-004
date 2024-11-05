@@ -1,7 +1,7 @@
 :root {
-	--primary-color:   rgb(72, 190, 100);
+	--primary-color:   #48be64;
 	--secondary-color: ghostwhite;
-	--overlay-color: rgba(0, 0, 0, 0.7);
+	--overlay-color: rgba(0, 0, 0, 0.6);
 	--background-dark: rgba(0, 0, 0, 0.8);
 	--background-light: rgba(248, 248, 255, 0.89);
 	--header-text-color:#1d1d85;
@@ -13,12 +13,24 @@
 	box-sizing: border-box;
 	list-style-type: none;
 }
+@font-face {
+	font-family: "font-1";
+	src: url(../fonts/Titr/Titr.ttf) ;
+}
 
+@font-face {
+	font-family: "title-font";
+	src: url(../fonts/Titr/Titr.ttf) ;
+}
 body {
-	font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: "Vazirmatn", sans-serif;
 	font-weight: 400;
 	scroll-behavior: smooth;
 	
+}
+.navbar,.article-header-text,.landing,.card-title,.info-icon-head-text,.services-header{
+	font-family: "title-font" !important;
+
 }
 main{
 	scroll-snap-type: mandatory;
@@ -51,8 +63,8 @@ main{
 
 .landing {
 	min-height: 100vh;
-	background: url(../gallery/hero-bg.webp) center/cover no-repeat fixed;
-	box-shadow: inset 0px 150px 100px 25px rgba(0,0,0,1);	position: relative;
+	background: url(../gallery/12a-gang.jpg) center/cover no-repeat fixed;
+	box-shadow: inset 0px 120px 175px 35px rgba(0,0,0,1);	position: relative;
 }
 
 .landing::before {
@@ -72,7 +84,6 @@ main{
 .landing-main-text {
 	font-size: 55px;
 	font-weight: 700;
-	font-family: sans-serif;
 	margin-bottom: 2vh;
 	animation: fadeInUp 1.5s ease-in-out;
 }
@@ -123,14 +134,21 @@ main{
 }
 
 .back-to-top {
-	border-top-left-radius: 100%;
-	width: 43px;
-	height: 43px;
-	line-height: 43px;
-	font-size: 18px;
-	transition: all .5s;
-	z-index: 3;
+	width: 52px;
+	height: 48px;
+	font-size: 20px;
+	line-height:48px;
+	transition: all .4s;
 	opacity: 0;
+	background-color: var(--overlay-color);
+	color: var(--primary-color);
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+	border-radius: .3rem;
+	border: 2px solid #48be64;
 }
 
 .horizontal-line {
@@ -310,13 +328,13 @@ swiper-slide {
 	color: rgba(0, 0, 0, 0.15);
   }
   .about-image-section{
-	overflow: hidden;
+	overflow: hidden !important;
   }
-  .card-image{
-	transition: transform 0.3s ease;
-  }
+ .card-image {
+	transition: transform 0.4s ease;
+}
   .card-image:hover {
-	transform: scale(1.05);
+	transform: scale(1.087);
   }
 
   .info-icon{
@@ -358,6 +376,11 @@ swiper-slide {
 }
 .services-icon{
 	color: black;
+}
+
+.services-main{
+	display: flex;
+	justify-content: space-between;
 }
 	@media (max-width: 992px) {
 	.navbar-brand {
@@ -418,6 +441,12 @@ swiper-slide {
 	}
 	.services-card{
 		width: 48.5% !important;
+	}
+	
+}
+@media (max-width:767px) {
+	.services-main{
+		justify-content: center;
 	}
 }
 
