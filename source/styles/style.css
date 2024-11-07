@@ -4,7 +4,7 @@
 	--overlay-color: rgba(0, 0, 0, 0.6);
 	--background-dark: rgba(0, 0, 0, 0.8);
 	--background-light: rgba(248, 248, 255, 0.89);
-	--header-text-color:#1d1d85;
+	--header-text-color:#000000;
 }
 
 * {
@@ -24,13 +24,13 @@
 }
 body {
 	font-family: "Vazirmatn", sans-serif;
-	font-weight: 400;
+	font-weight: 300 !important;
 	scroll-behavior: smooth;
-	
+	color: #3d3d3d;
 }
 .navbar,.article-header-text,.landing,.card-title,.info-icon-head-text,.services-header{
 	font-family: "title-font" !important;
-
+	font-weight: 100 !important;
 }
 main{
 	scroll-snap-type: mandatory;
@@ -63,7 +63,7 @@ main{
 
 .landing {
 	min-height: 100vh;
-	background: url(../gallery/12a-gang.jpg) center/cover no-repeat fixed;
+	background: url(../gallery/anformatic_1.png) center/cover no-repeat fixed;
 	box-shadow: inset 0px 120px 175px 35px rgba(0,0,0,1);	position: relative;
 }
 
@@ -140,14 +140,14 @@ main{
 	line-height:48px;
 	transition: all .4s;
 	opacity: 0;
-	background-color: var(--overlay-color);
+	background-color: #7e7e7e;
 	color: var(--primary-color);
 	text-align: center;
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	margin: 10px;
-	border-radius: .3rem;
+	border-radius: .4rem;
 	border: 2px solid #48be64;
 }
 
@@ -226,7 +226,7 @@ main{
 }
 
 .fa-square-js:hover , .services-card:hover .fa-square-js{
-	color: #ffff00;
+	color: #f7e018;
 }
 
 .fa-node-js:hover{
@@ -268,7 +268,7 @@ main{
 }
 
 .js-title {
-	color: #ffff00;
+	color: #f7e018;
 }
 
 .node-title {
@@ -329,25 +329,23 @@ swiper-slide {
   }
   .about-image-section{
 	overflow: hidden !important;
+	padding: 0 !important;
   }
  .card-image {
-	transition: transform 0.4s ease;
+	transition: transform 0.5s ease;
+	max-width: 98%;
 }
   .card-image:hover {
-	transform: scale(1.087);
+	transform: scale(1.17);
+	max-width: 98%;
+
   }
 
   .info-icon{
-	/* color: var(--primary-color); */
 	color: black;
-	/* text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4); */
   }
   .info-text-card:hover .info-icon{
 	color: var(--primary-color);
-  }
-  .info-text-card:hover{
-	box-shadow:  0px 0px 10px 5px rgba(0, 0, 0, 0.185);
-
   }
   .info-text-card{
 	padding: 15px;
@@ -365,6 +363,7 @@ swiper-slide {
 	width: 32%;
 	background-color:rgb(246, 246, 246);
 	transition: all .5s !important;
+	padding: 50px 0;
 }
 .services-card:hover{
 	transform: translateY(-7px) !important;
@@ -375,6 +374,18 @@ swiper-slide {
 	color: var(--header-text-color);
 }
 .services-icon{
+	color: black !important;
+	background: var(--primary-color);
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.services-icon .fa-brands,.fa-solid{
 	color: black;
 }
 
