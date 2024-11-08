@@ -152,7 +152,7 @@ main {
     line-height: 48px;
     transition: .4s;
     opacity: 0;
-    background-color: #808080;
+    background-color: rgb(60, 60, 60) ;
     color: var(--primary-color);
     text-align: center;
     position: fixed;
@@ -218,11 +218,6 @@ main {
 .fa-solid {
     transition: .5s !important;
     color: rgb(155, 155, 155);
-}
-
-.fa-brands:hover,
-.fa-solid:hover {
-    color: #ff6c36;
 }
 
 .fa-html5:hover,
@@ -388,7 +383,7 @@ main {
 }
 
 .services-card:hover .services-icon {
-    background-color: #808080;
+    background-color: rgb(30, 30, 30);
 }
 
 .services-header {
@@ -423,7 +418,133 @@ main {
     width: 88%;
     margin: 0 auto;
 }
+/* From Uiverse.io by cssbuttons-io */ 
+button{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-top: 15px;
+}
 
+button.learn-more {
+    width: 11rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #4A7856;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    right: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    left: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-left: 0.125rem solid #fff;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+button.learn-more .button-text {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 1.85rem 0 0;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle{
+    display:block !important;
+    width: 100% !important;
+}
+button:hover .circle .icon.arrow {
+    background: #fff;
+    -webkit-transform: translate(-1rem, 0) ;
+        -ms-transform: translate(-1rem, 0) ;
+            transform: translate(-1rem, 0) ;
+}
+
+button:hover .button-text{
+    color: #fff;
+}
+.footer-icon{
+    background-color: rgb(60, 60, 60);
+    color: ghostwhite;    
+    margin-left: 1rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px !important;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.footer-icon:hover{
+    background-color: var(--primary-color);
+    color:rgb(60, 60, 60) ;
+}
+footer{
+    background-color: rgb(30, 30, 30);
+    color: ghostwhite;
+    margin-top: 50px;
+}
+.footer-sub-text{
+    color: #CCCCCC;
+}
+.footer-header-text{
+    color: #4A7856;
+}
+.footer-link{transition: all .5S;}
+.footer-link:hover{
+    color: var(--primary-color);
+}
 @media(max-width:992px) {
     .navbar-brand {
         margin: 0 !important;
@@ -496,6 +617,9 @@ main {
 
     .services-icon .fa-brands {
         font-size: 45px !important;
+    }
+    .footer-adress-section,.footer-link-section,.footer-intro-text{
+        text-align: start !important;
     }
 }
 

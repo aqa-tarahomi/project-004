@@ -1,0 +1,296 @@
+      <!-- navbar-start -->
+      <header>
+         <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container nav-container">
+               <a href="#" aria-label="reload page" class="navbar-brand ms-4 col-md-auto">
+               <img src="source/gallery/logo.png" alt="لوگو هنرستان انفورماتیک ایران" style=" width: 150px;" class="m-auto" decoding="async">
+               </a>
+               <div class="offcanvas offcanvas-end" id="navv" data-bs-backdrop="true" data-bs-scroll="true"
+                  tabindex="-1">
+                  <div class="d-md-none mt-3 d-flex px-3" data-bs-theme="dark">
+                     <p class="m-auto text-light"><span class="prime-color">«</span> انفورماتیک ایران <span
+                        class="prime-color">»</span></p>
+                     <button type="button" class="btn-close mb-2" data-bs-dismiss="offcanvas"
+                        aria-label="Close nav"></button>
+                  </div>
+                  <ul class="navbar-nav me-3">
+                     <li class="nav-item me-2 ms-2"><a href="#landing" class="nav-link active"
+                        aria-label="landing page">صفحه اصلی</a></li>
+                     <li class="nav-item me-2 ms-2"><a href="#about" class="nav-link"
+                        aria-label="about us page">درباره ما</a></li>
+                     <li class="nav-item me-2 ms-2"><a href="#services" class="nav-link"
+                        aria-label="services page">خدمات آموزشی</a></li>
+                     <li class="nav-item me-2 ms-2"><a href="#portfolio" class="nav-link"
+                        aria-label="portfolio page">نمونه کارها</a></li>
+                     <li class="nav-item me-2 ms-2"><a href="#team" class="nav-link"
+                        aria-label="about our team page">تیم آموزشی</a></li>
+                     <li class="nav-item me-2 ms-2"><a href="#contact" class="nav-link"
+                        aria-label="contact us page">تماس با ما</a></li>
+                  </ul>
+               </div>
+               <button class="navbar-toggler border" style="border-color: var(--primary-color) !important;"
+                  type="button" data-bs-toggle="offcanvas" data-bs-target="#navv" aria-controls="navv"
+                  aria-label="nav bar" data-bs-theme="dark">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+            </div>
+         </nav>
+      </header>
+      <!-- navbar-end -->
+      <main>
+         <!-- Landing Section -->
+         <article class="landing d-flex align-items-center article" id="landing">
+            <div class="container">
+               <div class="row text-light text-center mx-auto landing-text-section">
+                  <h1 class="landing-main-text" id="landing-text-1">هنرستان هوشمند فنی و حرفه‌ای <br> <span
+                     class="prime-color">«</span> انفورماتیک ایران <span class="prime-color">»</span></h1>
+                  <p class="landing-caption-text" id="landing-text-2">محلی برای رشد و شکوفایی استعدادهای دیجیتالی و
+                     فناوری اطلاعات
+                  </p>
+               </div>
+               <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                  <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                     <div class="icon-box">
+                        <i class="bi bi-binoculars"></i>
+                        <h3>چشم‌انداز روشن</h3>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+                     <div class="icon-box">
+                        <i class="bi bi-bullseye"></i>
+                        <h3>هدف‌گذاری دقیق</h3>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+                     <div class="icon-box">
+                        <i class="bi bi-fullscreen-exit"></i>
+                        <h3>خلاقیت بدون مرز</h3>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
+                     <div class="icon-box">
+                        <i class="bi bi-card-list"></i>
+                        <h3>یادگیری ساختاریافته</h3>
+                     </div>
+                  </div>
+                  <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
+                     <div class="icon-box">
+                        <i class="bi bi-gem"></i>
+                        <h3>استعدادهای درخشان</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </article>
+         <!-- About Section -->
+         <div class="container mt-5" id="about">
+            <div class="article-header-text text-center mb-5 mt-5">
+               <div class="article-main-header position-relative">
+                  <h2 class="article-main-header-text mb-0 user-select-none">درباره ما</h2>
+                  <p class="article-background-header-text centered user-select-none">درباره ما</p>
+               </div>
+               <div class="horizontal-line mx-auto mb-3"></div>
+               <p class="lead mt-3 user-select-none article-subtitle-text">با بیش از ۲۶ سال تجربه، ما بر یادگیری مبتنی بر پروژه و آموزش فناوری‌های نوین تمرکز
+                  داریم.
+               </p>
+            </div>
+            <article class="about article mt-5">
+               <div class="row d-flex justify-content-around">
+                  <div class="col-lg-6 about-text-section">
+                     <div class="card-body">
+                        <h3 class="card-title card-text mb-2 header-color">آموزش‌هایی برای ساختن آینده</h3>
+                        <p class="card-text"><em>
+                           در هنرستان هوشمند انفورماتیک ایران، هدف ما ارائه آموزش‌های تخصصی و حرفه‌ای برای ورود
+                           موفق به دنیای فناوری اطلاعات است. با برنامه‌های کاربردی و پروژه‌های عملی، شما آماده
+                           می‌شوید تا در صنعت فناوری بدرخشید.
+                           </em>
+                        </p>
+                        <ul class="card-text ">
+                           <li><i class="bi bi-check2-all prime-color h5 ms-1"></i><span>دوره‌های آموزشی ویژه و متنوع با توجه به نیاز بازار کار</span></li>
+                           <li><i class="bi bi-check2-all prime-color h5 ms-1"></i><span>پروژه‌های عملی برای یادگیری مهارت‌های واقعی و کاربردی</span></li>
+                           <li><i class="bi bi-check2-all prime-color h5 ms-1"></i><span>پشتیبانی و راهنمایی مستمر در مسیر یادگیری و پیشرفت شما</span></li>
+                        </ul>
+                        <p class="card-text">در این دوره یاد می‌گیرید که الگوریتم و برنامه‌نویسی سخت‌افزار یا امبدد چیست و چه کاربردهایی دارد.</p>
+                        <button class="learn-more">
+                           <span class="circle" aria-hidden="true">
+                           <span class="icon arrow"></span>
+                           </span>
+                           <span class="button-text">بیشتر بدانید</span>
+                         </button>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 about-image-section " data-aos="fade-up" data-aos-easing="ease-in-out"
+                     data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                     <img src="source/gallery/test-exam.jpg" class="card-image img-fluid" alt="تصویر درباره ما">
+                  </div>
+               </div>
+
+               
+
+            </article>
+            <!-- Swiper Section -->
+            <article class="about article">
+               <swiper-container class="mySwiper text-center" pagination="" pagination-clickable="true"
+                  autoplay-delay="3000" autoplay-disable-on-interaction="false" loop="true">
+                  <swiper-slide aria-label="HTML5">
+                     <i class="fa-brands fa-html5 display-2"></i>
+                     <h5 class="html5-title mb-5">HTML5</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="CSS3">
+                     <i class="fa-brands fa-css3-alt display-2"></i>
+                     <h5 class="css3-title">CSS3</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="JavaScript">
+                     <i class="fa-brands fa-square-js display-2"></i>
+                     <h5 class="js-title">JavaScript</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="Node.js">
+                     <i class="fa-brands fa-node-js display-2"></i>
+                     <h5 class="node-title">Node.js</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="Bootstrap">
+                     <i class="fa-brands fa-bootstrap display-2"></i>
+                     <h5 class="bootstrap-title">Bootstrap</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="PHP">
+                     <i class="fa-brands fa-php display-2"></i>
+                     <h5 class="php-title">PHP</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="SQL Database">
+                     <i class="fa-solid fa-database display-2"></i>
+                     <h5 class="sql-title">SQL Database</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="React.js">
+                     <i class="fa-brands fa-react display-2"></i>
+                     <h5 class="react-title">React.js</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="Java">
+                     <i class="fa-brands fa-java display-2"></i>
+                     <h5 class="java-title">Java</h5>
+                  </swiper-slide>
+                  <swiper-slide aria-label="Laravel">
+                     <i class="fa-brands fa-laravel display-2"></i>
+                     <h5 class="laravel-title">Laravel</h5>
+                  </swiper-slide>
+               </swiper-container>
+            </article>
+            <article class="about article mt-5">
+               <div class="row d-flex justify-content-around">
+                  <div class="col-lg-6 about-image-section p-0" data-aos="fade-up" data-aos-easing="ease-in-out"
+                     data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                     <img src="source/gallery/anformatic_students.jpg" class="card-image img-fluid p-0" alt="تصویر درباره ما">
+                  </div>
+                  <div class="col-lg-6 about-text-section ">
+                     <div class="card-body">
+                        <div class="d-flex align-items-center info-text-card">
+                           <i class="fa-solid fa-laptop h1 card-text info-icon"></i>
+                           <div class="me-3">
+                              <h4 class="card-text info-icon-head-text">آموزش فناوری‌های نوین</h4>
+                              <p class="card-text">ما به آموزش فناوری‌های نوین با تمرکز بر کاربردهای عملی و پروژه‌محور برای آماده‌سازی شما برای بازار کار می‌پردازیم.</p>
+                           </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-4 info-text-card">
+                           <i class="fa-solid fa-camera-retro h1 card-text info-icon"></i>
+                           <div class="me-3">
+                              <h4 class="card-text info-icon-head-text">یادگیری تجربی</h4>
+                              <p class="card-text">با انجام پروژه‌های عملی، مهارت‌های واقعی و کاربردی برای ایجاد تجربه یادگیری موثر به دست می‌آورید.</p>
+                           </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-4 info-text-card">
+                           <i class="fa-solid fa-keyboard h1 card-text info-icon"></i>
+                           <div class="me-3">
+                              <h4 class="card-text info-icon-head-text">برنامه‌نویسی و کدنویسی</h4>
+                              <p class="card-text">مهارت‌های برنامه‌نویسی خود را از طریق دوره‌های ساختارمند و عملی بهبود دهید و برای حل مسائل پیچیده آماده شوید.</p>
+                           </div>
+                        </div>
+                        <button class="learn-more">
+                           <span class="circle" aria-hidden="true">
+                           <span class="icon arrow"></span>
+                           </span>
+                           <span class="button-text">بیشتر بدانید</span>
+                         </button>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <article>
+               <div class="article-header-text text-center mb-5 mt-5">
+                  <div class="article-main-header position-relative">
+                     <h2 class="article-main-header-text mb-0 user-select-none">خدمات آموزشی ما</h2>
+                     <p class="article-background-header-text centered user-select-none">خدمات آموزشی ما</p>
+                  </div>
+                  <div class="horizontal-line mx-auto mb-3"></div>
+                  <p class="lead mt-3 user-select-none article-subtitle-text">با بیش از ۲۶ سال تجربه، ما بر یادگیری مبتنی بر پروژه و آموزش فناوری‌های نوین تمرکز
+                     داریم.
+                  </p>
+               </div>
+               <section id="services">
+                  <div class="services-main row">
+                     <div class="col-12 col-md-6 col-lg-4 mt-4 text-center border services-card rounded-3" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-duration="1500" data-aos-anchor-placement="center-bottom" >
+                        <div class="services-icon">
+                           <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="services-tetx-section">
+                           <h3 class="mt-2 services-header">آموزش CSS</h3>
+                           <p class="my-4 services-caption">یادگیری جامع CSS، شامل تکنیک‌های پیشرفته استایل‌دهی و اصول طراحی ریسپانسیو.</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 mt-4 text-center border services-card rounded-3" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                        <div class="services-icon">
+                           <i class="fa-brands fa-laravel "></i>
+                        </div>
+                        <div class="services-tetx-section">
+                           <h3 class="mt-2 services-header">توسعه لاراول</h3>
+                           <p class="my-4 services-caption">آموزش کامل لاراول با پروژه‌های واقعی و مهارت‌های عملی برای توسعه برنامه‌های وب پویا.</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 mt-4 text-center border services-card rounded-3" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                        <div class="services-icon">
+                           <i class="fa-brands fa-react "></i>
+                        </div>
+                        <div class="services-tetx-section">
+                           <h3 class="mt-2 services-header">برنامه‌نویسی جاوا</h3>
+                           <p class="my-4 services-caption">آموزش اصول برنامه‌نویسی جاوا، آماده‌سازی برای کاربردهای مختلف از وب تا توسعه اندروید.</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 mt-4 text-center border services-card rounded-3" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                        <div class="services-icon">
+                           <i class="fa-brands fa-php "></i> 
+                        </div>
+                        <div class="services-tetx-section">
+                           <h3 class="mt-2 services-header">PHP و MySQL</h3>
+                           <p class="my-4 services-caption">آموزش توسعه بک‌اند با PHP و MySQL برای ایجاد وب‌سایت‌های پویا و پایگاه داده‌محور.</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 mt-4 text-center border services-card rounded-3" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                        <div class="services-icon">
+                           <i class="fa-brands fa-square-js "></i>  
+                        </div>
+                        <div class="services-tetx-section">
+                           <h3 class="mt-2 services-header">مبانی جاوااسکریپت</h3>
+                           <p class="my-4 services-caption">مهارت‌یابی در جاوااسکریپت برای توسعه فرانت‌اند تعاملی در تمامی پلتفرم‌ها.</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 mt-4 text-center border services-card rounded-3" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                        <div class="services-icon">
+                           <i class="fa-brands fa-html5 "></i>
+                        </div>
+                        <div class="services-tetx-section">
+                           <h3 class="mt-2 services-header">مبانی HTML</h3>
+                           <p class="my-4 services-caption">آموزش اصولی HTML برای ساختاردهی و نمایش موثر محتوا در وب.</p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </article>
+            <a href="#" class="back-to-top" id="back_to_top">
+            <i class="bi bi-chevron-double-up text-center"></i> 
+            </a>
+         </div>
+      </main>
