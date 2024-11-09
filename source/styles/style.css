@@ -653,3 +653,27 @@ footer{
         transform: translateY(0);
     }
 }
+
+
+/* ---------------portfolio section--------------- */
+.portfolio-landing{
+    min-height: 40vh;
+    background: url(../gallery/portfolio.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 160px 0 80px 0;
+}
+
+.portfolio-landing::before {
+    content: "";
+    background: var(--overlay-color);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.portfolio-landing .container,
+.container-fluid {
+    z-index: 3;
+}
