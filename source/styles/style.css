@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #48be64;
+    --primary-color: rgb(57, 179, 67);
     --secondary-color: ghostwhite;
     --overlay-color: rgba(0, 0, 0, 0.6);
     --background-dark: rgba(0, 0, 0, 0.8);
@@ -160,7 +160,7 @@ main {
     right: 0;
     margin: 10px;
     border-radius: .4rem;
-    border: 2px solid #48be64;
+    border: 2px solid var(--primary-color);
 }
 
 .horizontal-line {
@@ -447,7 +447,7 @@ button.learn-more .circle {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #4A7856;
+    background: var(--primary-color);
     border-radius: 1.625rem;
 }
 
@@ -477,8 +477,8 @@ button.learn-more .circle .icon.arrow::before {
     left: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-left: 0.125rem solid #fff;
+    border-top: 0.125rem solid #000000;
+    border-left: 0.125rem solid #000000;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -506,14 +506,14 @@ button:hover .circle{
     width: 100% !important;
 }
 button:hover .circle .icon.arrow {
-    background: #fff;
+    background: #000000;
     -webkit-transform: translate(-1rem, 0) ;
         -ms-transform: translate(-1rem, 0) ;
             transform: translate(-1rem, 0) ;
 }
 
 button:hover .button-text{
-    color: #fff;
+    /* color: #fff; */
 }
 .footer-icon{
     background-color: rgb(60, 60, 60);
@@ -539,13 +539,19 @@ footer{
     color: #CCCCCC;
 }
 .footer-header-text{
-    color: #4A7856;
+    color: var(--primary-color);
+
 }
-.footer-link{transition: all .5S;}
+.footer-link{
+    transition: all .5S;
+}
+.footer-link-section .footer-link{
+    font-size: 19px;
+}
 .footer-link:hover{
     color: var(--primary-color);
 }
-@media(max-width:992px) {
+@media (max-width:991px) {
     .navbar-brand {
         margin: 0 !important;
     }
@@ -586,19 +592,19 @@ footer{
     }
 
     .article-background-header-text {
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
-@media(min-width:992px)and(max-width:1200px) {
-    .landing-main-text {
-        font-size: 53px;
-    }
-}
-
-@media(min-width:767px)and(max-width:992px) {
+@media(min-width:991px) and (max-width:1200px) {
     .landing-main-text {
         font-size: 50px;
+    }
+}
+
+@media(min-width:767px) and (max-width:991px) {
+    .landing-main-text {
+        font-size: 45px !important;
     }
 
     .landing-text-section {
@@ -620,6 +626,13 @@ footer{
     }
     .footer-adress-section,.footer-link-section,.footer-intro-text{
         text-align: start !important;
+    }
+
+    .landing-main-text {
+        font-size: 30px;
+    }
+    .landing-caption-text{
+        font-size: 17px;
     }
 }
 
