@@ -336,6 +336,7 @@ main {
 .about-image-section {
     overflow: hidden !important;
     padding: 0 !important;
+    border: 3px solid var(--primary-color);
 }
 
 .card-image {
@@ -346,6 +347,8 @@ main {
 .card-image:hover {
     transform: scale(1.17);
     max-width: 100% !important;
+
+
 }
 
 .info-icon {
@@ -677,3 +680,11 @@ footer{
 .container-fluid {
     z-index: 3;
 }
+
+.checked {
+    color: orange;
+  }
+  .card-img{
+    border: 3px solid var(--primary-color);
+    overflow: hidden;
+  }
