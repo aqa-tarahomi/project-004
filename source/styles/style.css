@@ -540,6 +540,7 @@ footer{
 }
 .footer-sub-text{
     color: #CCCCCC;
+    text-align: justify;
 }
 .footer-header-text{
     color: var(--primary-color);
@@ -554,6 +555,7 @@ footer{
 .footer-link:hover{
     color: var(--primary-color);
 }
+
 @media (max-width:991px) {
     .navbar-brand {
         margin: 0 !important;
@@ -687,4 +689,11 @@ footer{
   .card-img{
     border: 3px solid var(--primary-color);
     overflow: hidden;
+  }
+
+  .product-info-text-strong{
+    font-weight: 500;
+  }
+  .products-description-text{
+    text-align: justify;
   }
