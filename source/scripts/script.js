@@ -44,7 +44,7 @@ function navscroll() {
       },
       breakpoints: {
         1: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
         768: {
@@ -56,7 +56,7 @@ function navscroll() {
             spaceBetween: 40,
           },
           1200: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween:100,
           },
       },
