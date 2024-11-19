@@ -88,6 +88,7 @@ main {
 .landing .container,
 .container-fluid {
     z-index: 3;
+    filter: blur(0px) !important;
 }
 
 .landing-main-text {
@@ -608,13 +609,18 @@ footer{
       .products-info-text{
         margin-top: 10% !important;
       }
+      .card{
+        width: 48%;
+    }
 }
 
 @media(min-width:991px) and (max-width:1200px) {
     .landing-main-text {
         font-size: 46px;
     }
-    
+    .card{
+        width: 44.5% ;
+    }
 }
 
 @media(min-width:767px) and (max-width:991px) {
@@ -639,11 +645,21 @@ footer{
     .footer-adress-section,.footer-link-section,.footer-intro-text{
         text-align: start !important;
     }
+
+    .card{
+        width: 100% !important;
+    }
 }
 
 @media(max-width:1000px) {
     .nav-container {
         width: 100% !important;
+    }
+}
+
+@media (min-width:1200px) {
+    .card{
+        width: 32.5%;
     }
 }
 
@@ -658,6 +674,7 @@ footer{
         transform: translateY(0);
     }
 }
+
 
 
 /* ---------------portfolio section--------------- */
@@ -710,4 +727,8 @@ footer{
   }
   a{
     color: var(--primary-color);
+  }
+
+  .card{
+    border: 1px solid rgba(0, 0, 0, 0.301);
   }
