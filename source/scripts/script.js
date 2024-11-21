@@ -89,3 +89,8 @@ window.addEventListener('scroll', activateAnimation);
 
 // Optionally, call the function once to activate animations if elements are in view on load
 activateAnimation();
+
+document.getElementById("back_to_top").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
