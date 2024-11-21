@@ -33,9 +33,11 @@
           }
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 
-<body onscroll="navscroll()">
+<body>
+    <div id="particles-js"></div> 
     <!-- Navbar Start -->
     <header>
         <nav class="navbar navbar-expand-lg border-bottom nav-background">
@@ -45,8 +47,8 @@
                 </a>
                 <div class="offcanvas offcanvas-end" id="navv" data-bs-backdrop="true" data-bs-scroll="true" tabindex="-1">
                     <div class="d-lg-none mt-3 d-flex px-3 align-items-center mb-4" data-bs-theme="dark">
-                        <a href="../../index.html" class="m-auto text-center"><img src="../../source/gallery/logo.png" alt="" class="img-fluid w-25"></a>
-                        <button type="button" class="btn-close mb-2" data-bs-dismiss="offcanvas" aria-label="Close nav"></button>
+                        <a href="../../index.html" class="m-auto text-center"><img src="../../source/gallery/logo.png" alt=""
+                            class="img-fluid" style="width: 35%;"></a>                        <button type="button" class="btn-close mb-2" data-bs-dismiss="offcanvas" aria-label="Close nav"></button>
                     </div>
                     <ul class="navbar-nav me-3">
                         <li class="nav-item me-2 ms-2"><a href="../../index.html" class="nav-link" aria-label="صفحه اصلی">صفحه اصلی</a></li>
@@ -54,7 +56,7 @@
                         <li class="nav-item me-2 ms-2"><a href="../../index.html#services" class="nav-link" aria-label="خدمات آموزشی">خدمات آموزشی</a></li>
                         <li class="nav-item me-2 ms-2"><a href="#portfolio" class="nav-link active" aria-label="پروژه‌ها">پروژه‌ها</a></li>
                         <li class="nav-item me-2 ms-2"><a href="#team" class="nav-link" aria-label="تیم آموزشی">تیم آموزشی</a></li>
-                        <li class="nav-item me-2 ms-2"><a href="#contact" class="nav-link" aria-label="تماس با ما">تماس با ما</a></li>
+                        <li class="nav-item me-2 ms-2"><a href="../contact-us/index.html" class="nav-link" aria-label="تماس با ما">تماس با ما</a></li>
                     </ul>
                 </div>
                 <button class="navbar-toggler border" style="border-color: var(--primary-color) !important;" type="button" data-bs-toggle="offcanvas" data-bs-target="#navv" aria-controls="navv" aria-label="nav bar" data-bs-theme="dark">
@@ -171,6 +173,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../../source/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" type="module"></script>
     <script async src="https://kit.fontawesome.com/41290f7b5b.js" crossorigin="anonymous" type="module"></script>
+    <script src="../../source/scripts/particle.js"></script>
+    <script src="../../source/scripts/script.js"></script>
 </body>
 
 </html>
