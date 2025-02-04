@@ -435,18 +435,10 @@
          </div>
       </footer>
 
-      <script src="source/scripts/sw.js"></script>
       <script>
          if ('serviceWorker' in navigator) {
-           window.addEventListener('load', () => {
-             navigator.serviceWorker.register('source/scripts/sw.js')
-               .then((registration) => {
-                 console.log('Service Worker registered: ', registration);
-               })
-               .catch((error) => {
-                 console.log('Service Worker registration failed: ', error);
-               });
-           });
+            navigator.serviceWorker.register('/source/scripts/sw.js')
+            console.log("Its ok")
          }
        </script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
