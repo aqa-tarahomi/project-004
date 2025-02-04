@@ -1,0 +1,22 @@
+{
+    "short_name": "هنرستان انفورماتیک",
+    "name": "هنرستان هوشمند فنی و حرفه‌ای انفورماتیک ایران",
+    "description": "آموزش‌های تخصصی و حرفه‌ای در زمینه فناوری اطلاعات و مهارت‌های عملی",
+    "icons": [
+      {
+        "src": "source/gallery/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "source/gallery/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#007bff"
+  }
