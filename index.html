@@ -17,7 +17,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link rel="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
       <link rel="manifest" href="source/scripts/manifest.json">
-
+<!-- 
       <script type="application/ld+json">
          {
            "@context": "http://schema.org",
@@ -34,7 +34,7 @@
              "availableLanguage": "Persian"
            }
          }
-      </script>
+      </script> -->
    </head>
    <body onscroll="navscroll()">
       <!-- navbar-start -->
@@ -435,7 +435,7 @@
          </div>
       </footer>
 
-      
+
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="source/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" type="module"></script>
@@ -446,7 +446,7 @@
       <script>
          if ('serviceWorker' in navigator) {
            window.addEventListener('load', () => {
-             navigator.serviceWorker.register('/sw.js')
+             navigator.serviceWorker.register('source/scripts/sw.js')
                .then((registration) => {
                  console.log('Service Worker registered: ', registration);
                })

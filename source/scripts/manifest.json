@@ -4,12 +4,12 @@
     "description": "آموزش‌های تخصصی و حرفه‌ای در زمینه فناوری اطلاعات و مهارت‌های عملی",
     "icons": [
       {
-        "src": "source/gallery/logo.png",
+        "src": "../gallery/logo.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "source/gallery/logo.png",
+        "src": "..//gallery/logo.png",
         "type": "image/png",
         "sizes": "512x512"
       }
