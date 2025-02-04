@@ -14,7 +14,7 @@
     "sizes": "512x512"
   }
 ],
-    "start_url": "/index.html",
+    "start_url": "/project-004/index.html",
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
