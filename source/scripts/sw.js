@@ -1,6 +1,6 @@
 const CACHE_NAME = 'isitschool-v1';
 const ASSETS = [
-    'https://aqa-tarahomi.github.io/project-004/',
+    '/',
   
     // CSS files
     '/source/styles/style.css',
