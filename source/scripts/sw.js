@@ -1,9 +1,6 @@
 const CACHE_NAME = 'isitschool-v1';
 const ASSETS = [
-    '/',
-    '/index.html',
-    '/main/Portfolio/index.html',
-    '/main/contact-us/index.html',
+    'https://aqa-tarahomi.github.io/project-004/',
   
     // CSS files
     '/source/styles/style.css',
@@ -19,7 +16,7 @@ const ASSETS = [
     'https://kit.fontawesome.com/41290f7b5b.js',
   
     // Images and icons
-    // '/source/gallery/logo.png',
+    '/source/gallery/logo.png',
     '/source/gallery/test-exam.jpg',
     '/source/gallery/anformatic_students.jpg',
     '/source/gallery/favicon.ico',
