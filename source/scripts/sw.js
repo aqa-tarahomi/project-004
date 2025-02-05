@@ -1,5 +1,7 @@
 const CACHE_NAME = "pwa-cache-v2";
-const FILES_TO_CACHE = [  
+const FILES_TO_CACHE = [
+  '/',
+  
     // CSS files
     '../styles/style.css',
     '../bootstrap-5.3.2-dist/css/bootstrap.min.css',
