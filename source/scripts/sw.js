@@ -7,6 +7,10 @@ const FILES_TO_CACHE = [
     '../bootstrap-5.3.2-dist/css/bootstrap.min.css',
     'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
     'https://unpkg.com/aos@2.3.1/dist/aos.css',
+    'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css',
+    'https://fonts.googleapis.com',
+    'https://fonts.gstatic.com',
+    '../scripts/manifest.json',
   
     // JavaScript files
     '../scripts/script.js',
@@ -14,6 +18,8 @@ const FILES_TO_CACHE = [
     'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js',
     'https://unpkg.com/aos@2.3.1/dist/aos.js',
     'https://kit.fontawesome.com/41290f7b5b.js',
+    '../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js',
+
   
     // Images and icons
     '../gallery/logo.png',
