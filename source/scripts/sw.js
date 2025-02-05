@@ -40,12 +40,3 @@ self.addEventListener("fetch", (event) => {
       })
   );
 });
-self.addEventListener("activate", (event)=>{
-    event.waitUntil(
-        caches.keys().then((cachename)=>{
-            return Promise.all(
-                cachename.map(())
-            )
-        })
-    )
-})
