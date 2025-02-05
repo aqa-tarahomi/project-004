@@ -26,7 +26,8 @@ const FILES_TO_CACHE = [
 
 ];
 
-<<<<<<< HEAD
+
+// ✅ Install Event: Cache F<<<<<<< HEAD
 
 // ✅ Install Event: Cache Files
 self.addEventListener("install", event => {
@@ -60,7 +61,7 @@ self.addEventListener("fetch", event => {
         }).catch(() => caches.match("/index.html")) // Serve index.html if offline
     );
 });
-=======
+
 self.addEventListener("install", (event) => {
     event.waitUntil(
       caches.open(CACHE_NAME).then((cache) => {
@@ -91,6 +92,4 @@ self.addEventListener("install", (event) => {
       })
     );
   });
-  
->>>>>>> 64ae595a5d12bb215d6d7d21c1b73e0812bfa7ba
   
