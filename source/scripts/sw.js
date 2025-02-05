@@ -1,6 +1,6 @@
 const CACHE_NAME = "pwa-cache-v2";
 const FILES_TO_CACHE = [
-  '/',
+  '../../index.html',
   
     // CSS files
     '../styles/style.css',
@@ -8,7 +8,7 @@ const FILES_TO_CACHE = [
     'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
     'https://unpkg.com/aos@2.3.1/dist/aos.css',
     'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css',
-      
+
     // JavaScript files
     '../scripts/script.js',
     '../scripts/swiper.js',
