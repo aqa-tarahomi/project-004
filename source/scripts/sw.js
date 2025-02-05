@@ -26,17 +26,34 @@ const ASSETS = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(
+    event.waitUntil(
       caches.open(CACHE_NAME).then((cache) => {
-          return cache.add(ASSETS);
+        return Promise.all(
+          ASSETS.map((asset) => {
+            return fetch(asset) // Try to fetch the asset before adding to cache
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error('Failed to fetch asset: ' + asset);
+                }
+                return cache.add(asset);
+              })
+              .catch((err) => {
+                console.error('Error caching asset:', asset, err);
+              });
+          })
+        );
       })
-  );
-});
+    );
+  });
 
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-      caches.match(event.request).then((response) => {
-          return response || fetch(event.request);
+  self.addEventListener("install", (event) => {
+    event.waitUntil(
+      caches.open(CACHE_NAME).then((cache) => {
+        return cache.addAll(ASSETS).catch((err) => {
+          console.error('Error caching assets during install:', err);
+        });
       })
-  );
-});
+    );
+  });
+  
+  
