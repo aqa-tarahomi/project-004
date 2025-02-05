@@ -66,7 +66,7 @@ self.addEventListener("install", (event) => {
     event.waitUntil(
       caches.open(CACHE_NAME).then((cache) => {
         return Promise.all(
-          ASSETS.map((asset) => {
+          FILES_TO_CACHE.map((asset) => {
             return fetch(asset) // Try to fetch the asset before adding to cache
               .then((response) => {
                 if (!response.ok) {
@@ -86,7 +86,7 @@ self.addEventListener("install", (event) => {
   self.addEventListener("install", (event) => {
     event.waitUntil(
       caches.open(CACHE_NAME).then((cache) => {
-        return cache.addAll(ASSETS).catch((err) => {
+        return cache.addAll(FILES_TO_CACHE).catch((err) => {
           console.error('Error caching assets during install:', err);
         });
       })
