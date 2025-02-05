@@ -4,12 +4,12 @@
     "start_url": "/project-004/index.html",
 "icons": [
   {
-    "src": "/source/gallery/logo.png",
+    "src": "../gallery/logo.png",
     "type": "image/png",
     "sizes": "192x192"
   },
   {
-    "src": "/source/gallery/logo.png",
+    "src": "../gallery/logo.png",
     "type": "image/png",
     "sizes": "512x512"
   }
