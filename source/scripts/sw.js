@@ -26,6 +26,7 @@ const FILES_TO_CACHE = [
 
 ];
 
+<<<<<<< HEAD
 
 // ✅ Install Event: Cache Files
 self.addEventListener("install", event => {
@@ -59,4 +60,37 @@ self.addEventListener("fetch", event => {
         }).catch(() => caches.match("/index.html")) // Serve index.html if offline
     );
 });
+=======
+self.addEventListener("install", (event) => {
+    event.waitUntil(
+      caches.open(CACHE_NAME).then((cache) => {
+        return Promise.all(
+          ASSETS.map((asset) => {
+            return fetch(asset) // Try to fetch the asset before adding to cache
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error('Failed to fetch asset: ' + asset);
+                }
+                return cache.add(asset);
+              })
+              .catch((err) => {
+                console.error('Error caching asset:', asset, err);
+              });
+          })
+        );
+      })
+    );
+  });
+
+  self.addEventListener("install", (event) => {
+    event.waitUntil(
+      caches.open(CACHE_NAME).then((cache) => {
+        return cache.addAll(ASSETS).catch((err) => {
+          console.error('Error caching assets during install:', err);
+        });
+      })
+    );
+  });
+  
+>>>>>>> 64ae595a5d12bb215d6d7d21c1b73e0812bfa7ba
   
