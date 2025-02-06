@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description"
-         content="هنرستان هوشمند فنی و حرفه‌ای انفورماتیک ایران - ارائه‌دهنده آموزش‌های تخصصی و حرفه‌ای در زمینه فناوری اطلاعات، مهارت‌های عملی و پروژه‌های برتر.">
-      <link rel="shortcut icon" href="source/gallery/favicon.ico" type="image/x-icon">
-      <title>هنرستان هوشمند انفورماتیک ایران | آموزش فنی و حرفه‌ای در ایران</title>
-      <link rel="canonical" href="https://isitschool.ir">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
-      <link rel="stylesheet" href="source/bootstrap-5.3.2-dist/css/bootstrap.min.css" as="style">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-      <link rel="stylesheet" href="source/styles/style.css" type="text/css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-      <link rel="manifest" href="source/scripts/manifest.json">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="هنرستان هوشمند فنی و حرفه‌ای انفورماتیک ایران - ارائه‌دهنده آموزش‌های تخصصی و حرفه‌ای در زمینه فناوری اطلاعات، مهارت‌های عملی و پروژه‌های برتر.">
+    
+    <!-- ✅ SEO Open Graph & Twitter Meta Tags -->
+    <meta property="og:title" content="هنرستان هوشمند انفورماتیک ایران | آموزش فنی و حرفه‌ای">
+    <meta property="og:description" content="آموزش‌های تخصصی و حرفه‌ای فناوری اطلاعات، مهارت‌های عملی و پروژه‌های برتر.">
+    <meta property="og:image" content="https://isitschool.ir/source/gallery/logo-2.webp">
+    <meta property="og:url" content="https://isitschool.ir">
+    <meta name="twitter:card" content="summary_large_image">
 
-      <script type="application/ld+json">
-         {
-           "@context": "http://schema.org",
-           "@type": "EducationalOrganization",
-           "name": "هنرستان هوشمند فنی و حرفه‌ای انفورماتیک ایران",
-           "url": "https://isitschool.ir",
-           "logo": "source/gallery/logo-2.webp",
-           "description": "هنرستان هوشمند فنی و حرفه‌ای انفورماتیک ایران ارائه‌دهنده آموزش‌های فنی و حرفه‌ای در زمینه انفورماتیک",
-           "contactPoint": {
-             "@type": "ContactPoint",
-             "telephone": "+98-21-12345678",
-             "contactType": "Customer Service",
-             "areaServed": "IR",
-             "availableLanguage": "Persian"
-           }
-         }
-      </script>
-      
-      <script>
-         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('source/scripts/sw.js')
-  .then(() => console.log("Service Worker Registered"))
-  .catch(err => console.error("Service Worker Registration Failed", err));
+    <link rel="shortcut icon" href="source/gallery/favicon.ico" type="image/x-icon">
+    <title>هنرستان هوشمند انفورماتیک ایران | آموزش فنی و حرفه‌ای در ایران</title>
+    <link rel="canonical" href="https://isitschool.ir">
+    
+    <!-- ✅ Font & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="source/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="source/styles/style.css" type="text/css">
+    
+    <link rel="manifest" href="source/scripts/manifest.json">
 
-         }
-       </script>
-   </head>
+    <!-- ✅ Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "هنرستان هوشمند فنی و حرفه‌ای انفورماتیک ایران",
+        "url": "https://isitschool.ir",
+        "logo": "source/gallery/logo-2.webp",
+        "description": "هنرستان هوشمند انفورماتیک ایران ارائه‌دهنده آموزش‌های فنی و حرفه‌ای در زمینه انفورماتیک",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+98-21-12345678",
+            "contactType": "Customer Service",
+            "areaServed": "IR",
+            "availableLanguage": "Persian"
+        }
+    }
+    </script>
+
+    <!-- ✅ Register Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/source/scripts/sw.js')
+                .then(() => console.log("Service Worker Registered"))
+                .catch(err => console.error("Service Worker Registration Failed", err));
+        }
+    </script>
+</head>
    <body onscroll="navscroll()">
       <!-- navbar-start -->
       <header>
@@ -384,16 +393,18 @@
             </a>
          </div>
       </main>
-      <script>
-         AOS.init();
-       </script>
+       <!-- ✅ Scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          AOS.init();
+      });
+  </script>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="source/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" type="module"></script>
-      <script async src="https://kit.fontawesome.com/41290f7b5b.js" crossorigin="anonymous" type="module"></script>
-      <script src="source/scripts/script.js"></script>
-      <script src="source/scripts/swiper.js"></script>
-
-   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="source/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/41290f7b5b.js" crossorigin="anonymous"></script>
+  <script src="source/scripts/script.js"></script>
+  <script src="source/scripts/swiper.js"></script>
+</body>
 </html>
