@@ -1,6 +1,6 @@
 const CACHE_NAME = "pwa-cache-v9"; // Increment version for debugging
 const FILES_TO_CACHE = [
-  "/project-004/source/index.html",
+  "/project-004/index.html",
   "/project-004/source/styles/style.css",
   "/project-004/source/scripts/script.js",
   "/project-004/source/bootstrap-5.3.2-dist/css/bootstrap.min.css",
