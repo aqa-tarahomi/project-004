@@ -14,14 +14,7 @@ const FILES_TO_CACHE = [
   "https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap",
 ];
 
-// Install event: Cache all necessary files
-self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(FILES_TO_CACHE);
-    }).then(() => self.skipWaiting())
-  );
-});
+
 
 // Activate event: Remove old caches
 self.addEventListener("activate", (event) => {
@@ -35,6 +28,15 @@ self.addEventListener("activate", (event) => {
         })
       );
     }).then(() => self.clients.claim())
+  );
+});
+
+// Install event: Cache all necessary files
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(FILES_TO_CACHE);
+    }).then(() => self.skipWaiting())
   );
 });
 
