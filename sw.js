@@ -1,18 +1,12 @@
 const CACHE_NAME = "pwa-cache-v9"; // Increment version for debugging
 const FILES_TO_CACHE = [
-  "/", // Root directory
-  "/index.html",
-  "/styles/style.css",
-  "/source/bootstrap-5.3.2-dist/css/bootstrap.min.css",
-  "/source/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js",
-  "/gallery/logo.png",
-  "/gallery/anformatic_1.png",
-  "/gallery/favicon.ico",
-  "/scripts/script.js",
-  "/scripts/swiper.js",
-  "/scripts/particle.js",
+  "/project-004/source/index.html",
+  "/project-004/source/styles/style.css",
+  "/project-004/source/scripts/script.js",
+  "/project-004/source/bootstrap-5.3.2-dist/css/bootstrap.min.css",
+  "/project-004/source/gallery/logo.png",
+  "/project-004/source/gallery/favicon.ico",
 ];
-
 // ✅ Install event with request filtering
 self.addEventListener("install", (event) => {
   console.log("[Service Worker] Install event");
