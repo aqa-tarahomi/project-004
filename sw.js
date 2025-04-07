@@ -6,6 +6,9 @@ const FILES_TO_CACHE = [
   "/project-004/source/bootstrap-5.3.2-dist/css/bootstrap.min.css",
   "/project-004/source/gallery/logo.png",
   "/project-004/source/gallery/favicon.ico",
+  "/project-004/main/contact-us/index.html",
+  "/project-004/main/Portfolio/index.html",
+  "/project-004/main/products/index.html",
 ];
 // ✅ Install event with request filtering
 self.addEventListener("install", (event) => {
