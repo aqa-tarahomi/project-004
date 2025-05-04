@@ -1,5 +1,6 @@
 const CACHE_NAME = "pwa-cache-v9"; // Increment version for debugging
 const FILES_TO_CACHE = [
+  // Local project files
   "/project-004/index.html",
   "/project-004/source/styles/style.css",
   "/project-004/source/scripts/script.js",
@@ -9,7 +10,17 @@ const FILES_TO_CACHE = [
   "/project-004/main/contact-us/index.html",
   "/project-004/main/Portfolio/index.html",
   "/project-004/main/products/index.html",
+
+  // CDN files
+  "https://kit.fontawesome.com/41290f7b5b.js",
+  "https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js",
+  "https://unpkg.com/aos@2.3.1/dist/aos.js",
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css",
+  "https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap",
+  "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+  "https://unpkg.com/aos@2.3.1/dist/aos.css"
 ];
+
 // ✅ Install event with request filtering
 self.addEventListener("install", (event) => {
   console.log("[Service Worker] Install event");
