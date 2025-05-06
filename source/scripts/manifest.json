@@ -6,12 +6,12 @@
   {
     "src": "../gallery/logo-no-background_wI5fwWo.png",
     "type": "image/png",
-    "sizes": "192x192"
+    "sizes": "300x88"
   },
   {
     "src": "../gallery/logo-no-background_wI5fwWo.png",
     "type": "image/png",
-    "sizes": "512x512"
+    "sizes": "600x175"
   }
 ],
 "background_color": "#ffffff",
