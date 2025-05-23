@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #39b343;
+    --primary-color: #79B4A9;
     --secondary-color: ghostwhite;
     --overlay-color: rgba(0, 0, 0, 0.6);
     --background-dark: rgba(0, 0, 0, 0.8);
     --background-light: rgba(248, 248, 255, 0.89);
-    --header-text-color: #000;
+    --header-text-color: #011627;
+    --body-text-color:#333333;
 }
 
 * {
@@ -15,22 +16,27 @@
     image-rendering: optimizeSpeed;
 }
 
-@font-face {
-    font-family: "font-1";
-    src: url(../fonts/Titr/Titr.ttf);
-}
 
+@font-face {
+    font-family: "main_font";
+    src: url(../fonts/Shabnam-Medium.woff);
+}
 @font-face {
     font-family: "title-font";
     src: url(../fonts/Titr/Titr.ttf);
 }
 
-body,
-.article-subtitle-text {
-    font-family: "Vazirmatn", sans-serif;
+body{
+    font-family: "main_font" !important;
     font-weight: 300 !important;
-    color: #3d3d3d;
+    color: var(--body-text-color)  !important;
     scroll-behavior: smooth;
+}
+
+
+.article-subtitle-text{
+    font-weight: 300 !important;
+    color:  var(--body-text-color) !important;
 }
 
 .navbar,
@@ -47,34 +53,35 @@ main {
 }
 
 .icon-box i,
-.nav-link:hover,
 .prime-color,
-.navbar-toggler {
+.navbar-toggler,.active {
     color: var(--primary-color) !important;
 }
 
 .nav-link,
 .navbar-brand,
-.icon-box h3,
-.active {
+.icon-box h3 {
     color: var(--secondary-color) !important;
 }
 
 .nav-background {
     background-color: var(--background-dark);
-    transition: .5s;
+    transition: 0.5s;
 }
 
-.nav-link:hover,
-.active {
+.nav-link:hover{
     text-decoration: underline 2px var(--primary-color) !important;
     text-underline-offset: 3px;
 }
+.active{
+    color: var(--primary-color) !important;
+    text-decoration: underline 2px white !important;
+    text-underline-offset: 3px;}
 
 .landing {
     min-height: 100vh;
     background: url(../gallery/anformatic_1.png )center/cover no-repeat fixed;
-    box-shadow: inset 0 120px 175px 35px rgba(0, 0, 0, 1);
+    box-shadow: inset 0 70px 100px  #000000;
     position: relative;
 }
 
@@ -116,14 +123,14 @@ main {
 
 .icon-box {
     padding: 30px 20px;
-    border: 1px solid rgba(248, 248, 255, 0.3);
+    border: 1px solid rgba(255, 227, 227, 0.4);
     height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: ease-in-out .3s;
+    transition: all .5s;
 }
 
 .icon-box:hover {
@@ -139,7 +146,7 @@ main {
     margin: 10px 0 0;
     font-size: 20px !important;
     line-height: 26px;
-    transition: ease-in-out .3s;
+    transition: all .5s;
 }
 
 .icon-box i {
@@ -148,12 +155,12 @@ main {
 
 .back-to-top {
     width: 52px;
-    height: 48px;
+    height: 52px;
     font-size: 20px;
-    line-height: 200%;
-    transition: .4s;
+    line-height: 49px;
+    transition: all .5s;
     opacity: 0;
-    background-color: rgb(60, 60, 60) ;
+    background-color:#424242;
     color: var(--primary-color);
     text-align: center;
     position: fixed;
@@ -161,7 +168,7 @@ main {
     right: 0;
     margin: 10px;
     border-radius: .4rem;
-    border: 2px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
 }
 
 .horizontal-line {
@@ -217,8 +224,8 @@ main {
 
 .fa-brands,
 .fa-solid {
-    transition: .5s !important;
-    color: rgb(155, 155, 155);
+    transition: all .5s;
+    color: #424242;
 }
 
 .fa-html5:hover,
@@ -329,9 +336,9 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
     font-size: 80px;
-    color: rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .about-image-section {
@@ -341,7 +348,7 @@ main {
 }
 
 .card-image {
-    transition: transform .5s ease;
+    transition: transform .3s ease;
     max-width: 100% !important;
     object-fit: cover;
 }
@@ -354,7 +361,7 @@ main {
 }
 
 .info-icon {
-    color: black;
+    color: #424242;
 }
 
 .info-text-card:hover .info-icon {
@@ -378,17 +385,17 @@ main {
 .services-card {
     width: 32%;
     background-color: rgb(246, 246, 246);
-    transition: .5s !important;
+    transition: all .3s !important;
     padding: 50px 0;
 }
 
 .services-card:hover {
     transform: translateY(-7px) !important;
-    transition: .5s !important;
+    transition: all .3s !important;
 }
 
 .services-card:hover .services-icon {
-    background-color: rgb(30, 30, 30);
+    background-color: #333333;
 }
 
 .services-header {
@@ -396,7 +403,7 @@ main {
 }
 
 .services-icon {
-    color: black !important;
+    color: #424242 !important;
     border: 3px solid var(--primary-color);
     margin: 0 auto;
     width: 85px;
@@ -405,7 +412,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: all .5s;
 }
 
 .services-icon .fa-brands,
@@ -445,8 +452,8 @@ button.learn-more {
 }
 
 button.learn-more .circle {
-    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
     margin: 0;
@@ -457,8 +464,8 @@ button.learn-more .circle {
 }
 
 button.learn-more .circle .icon {
-    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -490,8 +497,8 @@ button.learn-more .circle .icon.arrow::before {
 }
 
 button.learn-more .button-text {
-    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
     left: 0;
@@ -518,8 +525,8 @@ button:hover .circle .icon.arrow {
 }
 
 .footer-icon{
-    background-color: rgb(60, 60, 60);
-    color: ghostwhite;    
+    background-color: #424242;
+    color: var(--primary-color);    
     margin-left: 1rem;
     width: 40px;
     height: 40px;
@@ -530,10 +537,10 @@ button:hover .circle .icon.arrow {
 }
 .footer-icon:hover{
     background-color: var(--primary-color);
-    color:rgb(60, 60, 60) ;
+    color:#424242;
 }
 footer{
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(20, 20, 20);
     color: ghostwhite;
     margin-top: 50px;
 }
@@ -546,7 +553,7 @@ footer{
 
 }
 .footer-link{
-    transition: all .5S;
+    transition: all .5s;
 }
 .footer-link-section .footer-link{
     font-size: 19px;
@@ -583,7 +590,7 @@ footer{
     }
 
     .navbar-nav {
-        border: 1px solid gray;
+        border: 1px solid #424242;
         height: 100%;
         margin: 0 15px;
     }
@@ -744,16 +751,9 @@ footer{
   a{
     color: var(--primary-color);
   }
-
   .card{
     border: 1px solid rgba(0, 0, 0, 0.301);
   }
-  
-
-
-
-
-  
   #particles-js {
     position: fixed;
     width: 100%;
@@ -789,7 +789,7 @@ footer{
 }
 
   .contact-image{
-    transition: 2s ease-in-out;
+    transition: all .5s;
     animation-name: pain;
     animation-iteration-count: infinite;
     animation-duration: 7s;
@@ -803,7 +803,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: all .5s;
     font-size: 30px;
     margin: 0 auto;
     background-color: rgb(241, 241, 241);
@@ -816,4 +816,7 @@ footer{
 }
 .contact-sub-text{
     font-weight: 300;
+}
+.footer-fa{
+    color: var(--primary-color) !important;
 }

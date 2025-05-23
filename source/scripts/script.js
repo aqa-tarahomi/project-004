@@ -42,5 +42,16 @@ document.getElementById("back_to_top").addEventListener("click", function (e) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-
+ let navmenulinks = document.querySelectorAll(".navbar a");
+ 
+ function navmenuScrollspy() {
+    navmenulinks.forEach(e => {
+       if (!e.hash) return;
+       let o = document.querySelector(e.hash);
+       if (!o) return;
+       let t = window.scrollY + 200;
+       t >= o.offsetTop && t <= o.offsetTop + o.offsetHeight ? (document.querySelectorAll(".navmenu a.active").forEach(e => e.classList.remove("active")), e.classList.add("active")) : e.classList.remove("active")
+    })
+ }
+ window.addEventListener("load", navmenuScrollspy), document.addEventListener("scroll", navmenuScrollspy);
   
