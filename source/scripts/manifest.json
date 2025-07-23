@@ -2,7 +2,7 @@
   "name": "هنرستان هوشمند فنی و حرفه‌ای انفورماتیک ایران",
   "short_name": "هنرستان انفورماتیک",
   "start_url": "/project-004/index.html",
-  "scope": "/project-004/",
+  "scope": "",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",

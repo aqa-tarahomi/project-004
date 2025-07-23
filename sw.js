@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa-cache-v10"; // Increment version for debugging
+const CACHE_NAME = "pwa-cache-v9"; // Increment version for debugging
 const FILES_TO_CACHE = [
   // Local project files
   "/project-004/index.html",
